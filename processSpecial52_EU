@@ -1,0 +1,50 @@
+Function of ProcessSpecial 52 [EU] [0x2056AB0 US]
+
+0x02056e2c      push    {r4, r5, r6, r7, r8, sb, sl, lr}
+0x02056e30      bl      fcn.02056c20
+0x02056e34      ldr     r1, [aav.aav.0x020b138c] ; 0x2056ed0
+0x02056e38      mov     r7, r0     ; arg1  ; HERO ID? Different function used.
+0x02056e3c      mov     r8, 0
+0x02056e40      ldr     r1, [r1]   ; 0x20b138c
+                                   ; aav.0x020b138c
+0x02056e44      mov     r6, 1
+0x02056e48      add     r0, r1, 0x9000
+0x02056e4c      ldr     sb, [r0, 0x84c]
+0x02056e50      mov     sl, r8
+0x02056e54      mov     r5, r8
+0x02056e58      mov     r4, r6
+0x02056e5c      ldrb    r0, [sb]
+0x02056e60      tst     r0, 1      ; 1
+0x02056e64      movne   r0, r6
+0x02056e68      moveq   r0, r5
+0x02056e6c      tst     r0, 0xff   ; 255
+0x02056e70      ldrshne r0, [sb, 8]
+0x02056e74      cmpne   r0, r7
+0x02056e78      beq     0x2056e8c
+0x02056e7c      lsl     r0, sl, 0x10
+0x02056e80      asr     r0, r0, 0x10
+0x02056e84      mov     r8, r4
+0x02056e88      bl      fcn.020584b4  ; Clear team?
+0x02056e8c      add     sl, sl, 1
+0x02056e90      cmp     sl, 4      ; 4
+0x02056e94      add     sb, sb, 0x68
+0x02056e98      blt     0x2056e5c
+0x02056e9c      bl      fcn.02056cdc  ; Or maybe this clears the team?
+0x02056ea0      mvn     r0, 0
+0x02056ea4      cmp     r7, r0
+0x02056ea8      beq     0x2056eb4     ; Only if r7 is not -1
+0x02056eac      mov     r0, r7     ; int32_t arg1
+0x02056eb0      bl      fcn.02056ad0    ; Set main Pokémon from storage storage r0
+
+
+
+0x02056eb4      ldr     r0, [aav.aav.0x020b138c] ; 0x2056ed0
+0x02056eb8      ldr     r0, [r0]   ; 0x20b138c
+                                   ; aav.0x020b138c
+0x02056ebc      add     r0, r0, 0x9000
+0x02056ec0      ldrb    r0, [r0, 0x877] ; int32_t arg1
+0x02056ec4      bl      fcn.020577e0  ; Maybe apply party changes?
+0x02056ec8      mov     r0, r8
+0x02056ecc      pop     {r4, r5, r6, r7, r8, sb, sl, pc}
+0x02056ed0      .dword 0x020b138c ; aav.0x020b138c
+

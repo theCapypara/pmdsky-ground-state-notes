@@ -1,0 +1,66 @@
+; EU ROM!
+; Used for BranchPerformance for example (input arg is first arg to that)
+; This function takes an input arg from 0 - X.
+; If it's 0      it checks if SCENARIO_SELECT is == 0x35. If yes it returns 1, else 0.
+; If it's 1 - 2  it checks if the GAME_MODE is 3. If so, it returns 1. Otherwise it proceeds with case > 7.
+; If it's 3 - 7  it checks if the GAME_MODE is 3. If so, it returns 0. Otherwise it proceeds with case > 7.
+; If it's > 7    it returns the corresponding flag value of PERFORMANCE_PROGRESS_LIST with the input arg as index.
+; Returns result (boolean) on r0.
+
+152: fcn.0204cdcc (int32_t arg1, int32_t arg_8h);
+; arg int32_t arg_8h @ sp+0x8
+; arg int32_t arg1 @ r0
+0x0204cdcc      push    {r4, lr}
+0x0204cdd0      mov     r4, r0     ; arg1
+0x0204cdd4      cmp     r4, 7      ; 7
+;-- switch
+0x0204cdd8      addls   pc, pc, r4, lsl 2 ; case.0x204cdd8.0
+                                   ; 0x204cde0 ; switch table (8 cases) at 0x204cde0
+;-- default:                       ; from 0x204cddc
+0x0204cddc      b       0x204ce48
+;-- case 0:                        ; from 0x204cdd8
+0x0204cde0      b       0x204CE00
+;-- case 1:                        ; from 0x204cdd8
+0x0204cde4      b       0x204CE38
+;-- case 2:                        ; from 0x204cdd8
+0x0204cde8      b       0x204CE38
+;-- case 3:                        ; from 0x204cdd8
+0x0204cdec      b       0x204CE24
+;-- case 4:                        ; from 0x204cdd8
+0x0204cdf0      b       0x204CE24
+;-- case 5:                        ; from 0x204cdd8
+0x0204cdf4      b       0x204CE24
+;-- case 6:                        ; from 0x204cdd8
+0x0204cdf8      b       0x204CE24
+;-- case 7:                        ; from 0x204cdd8
+0x0204cdfc      b       0x204CE24
+; 0
+0x0204ce00      mov     r0, 0      ; int32_t arg1
+0x0204ce04      mov     r2, r0
+0x0204ce08      mov     r1, 3      ; int32_t arg2
+0x0204ce0c      bl      fcn.0204b9b0 ; R0 = GET SCRIPT VARIABLE WITH OFFSET [variable [r1]: SCENARIO_SELECT - offset [r2]: 0]
+0x0204ce10      cmp     r0, 0x35   ; 53
+0x0204ce14      moveq   r0, 1
+0x0204ce18      movne   r0, 0
+0x0204ce1c      and     r0, r0, 0xff
+0x0204ce20      pop     {r4, pc}
+; 3 - 7
+0x0204ce24      bl      fcn.0204b2f8 ; GET GAME MODE  -> ldrb r0, [0x020b088c]
+0x0204ce28      cmp     r0, 3      ; 3
+0x0204ce2c      bne     0x204ce48
+0x0204ce30      mov     r0, 0
+0x0204ce34      pop     {r4, pc}
+; 1 - 2
+0x0204ce38      bl      fcn.0204b2f8 ; GET GAME MODE  -> ldrb r0, [0x020b088c]
+0x0204ce3c      cmp     r0, 3      ; 3
+0x0204ce40      moveq   r0, 1
+; Return 1 if GAME MODE is 3.
+0x0204ce44      popeq   {r4, pc}
+; + >7
+0x0204ce48      lsl     r0, r4, 0x10
+0x0204ce4c      lsr     r2, r0, 0x10
+0x0204ce50      mov     r0, 0      ; int32_t arg1
+0x0204ce54      mov     r1, 0x4e   ; 'N' ; int32_t arg2
+0x0204ce58      bl      fcn.0204b9b0 ; R0 = GET SCRIPT VARIABLE WITH OFFSET [variable [r1]: PERFORMANCE_PROGRESS_LIST - offset [r2]: arg1 & 0xFFF]
+0x0204ce5c      and     r0, r0, 0xff
+0x0204ce60      pop     {r4, pc}

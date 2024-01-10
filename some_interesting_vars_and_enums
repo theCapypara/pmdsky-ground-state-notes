@@ -1,0 +1,85 @@
+GAME_MODE:
+0 - Uninit.? [EXECUTE_SPECIAL_EPISODE_TYPE is then 0]
+1 - ? Some sort of special episode case, EXECUTE_SPECIAL_EPISODE_TYPE reads from 0x022abdec then - Activates Bidoof as active member and shows some of the bidoof related content. - Might be for debugging?
+-   If active, upon entering a map (or more specifically, trgiggering an event) it checks if GAME_MODE is 1 and if so writes a number of special episode, depending on location, to 0x022abdec again.
+2 - Normal? [EXECUTE_SPECIAL_EPISODE_TYPE is then 0]
+3 - ? Some sort of special episode case, EXECUTE_SPECIAL_EPISODE_TYPE reads from SPECIAL_EPISODE_TYPE then - Probably whether or not special episodes are ative or not?
+? Possibly more values
+
+arg1 to fn0x0204b9b0 and unk0 if BranchPerformance:
+0 - [1 if SCENARIO_SELECT == 0x35]
+1 - [1 if GAME_MODE == 3 else from PERFORMANCE_PROGRESS_LIST]
+2 - [1 if GAME_MODE == 3 else from PERFORMANCE_PROGRESS_LIST]
+3 - [0 if GAME_MODE == 3 else from PERFORMANCE_PROGRESS_LIST]
+4 - [0 if GAME_MODE == 3 else from PERFORMANCE_PROGRESS_LIST]
+5 - [0 if GAME_MODE == 3 else from PERFORMANCE_PROGRESS_LIST]
+6 - [0 if GAME_MODE == 3 else from PERFORMANCE_PROGRESS_LIST]
+7 - [0 if GAME_MODE == 3 else from PERFORMANCE_PROGRESS_LIST]
+? Possibly more values
+
+
+Scenario Fields:
+0: ?
+1: Level?
+
+
+EVENT_DIVIDE:
+
+SCENARIO_SELECT decides for EVENT_DIVIDE what to generally do 
+- 0x00 or other -> Resumes sets SCENARIO_SELECT to 0
+- 0x32 EVENT_DIVIDE_NEXT
+- 0x33 is rescue, 
+- 0x34 is rescue wait, 
+- 0x35 is debug, 
+- 0x36 is start special episode?
+
+SCENARIO_MAIN[0]:
+- 0x0 EVENT_DIVIDE_OPENING
+- 0x1 EVENT_DIVIDE_OPENING
+- 0xE  EVENT_DIVIDE_FIRST
+- 0x1C EVENT_DIVIDE_SECOND
+- 0x27 EVENT_DIVIDE_AFTER
+- 0x35 is debug
+
+SCENARIO_MAIN_BIT_FLAG:
+- 0x06: LABEL_DIVIDE_RESUME -> Goes to DVIVE_RESUME and works with COMPULSORY_SAVE_POINT
+- 0x07: LABEL_HANYOU_RESUME -> Forces resuming of game file
+
+GAME_MODE:
+- 0x03: Start new special episode?
+
+<supervision_ExecuteEnter param="0x7FFF" /> resumes save file?
+
+
+Interesting additional functions (EU):
+- fcn.022e8874 -> Part of unionall.ssb loading. MAKES 0x023257e4 POINT TO START OF GROUP TABLE OF unionall.SSB.
+- fcn.022e538c -> Also something in unionall loading process.
+- fcn.022e90b4 -> THE init function?
+- fcn.022dd004 -> called by fcn.022e90b4
+   - Calls:
+    0x022dd028      bl      fcn.022e4f04 ; 0x22dd02c
+    0x022dd02c      bl      fcn.022e8964
+    0x022dd030      bl      fcn.022e8a5c
+    0x022dd034      bl      fcn.022e8874
+    0x022dd038      bl      fcn.022e538c ; 0x22dd03c
+    0x022dd03c      bl      fcn.022e69d4
+    0x022dd040      bl      fcn.022e7a50
+    0x022dd044      bl      fcn.022e841c
+    0x022dd048      bl      fcn.022dd058
+- fcn.022dd058 Inits many structs?
+
+
+
+Case operators (TODO: Check again with real values):
+- 0x00: FALSE
+- 0x01: TRUE
+- 0x02: ==
+- 0x03: !=
+- 0x04: >
+- 0x05: >=
+- 0x06: <
+- 0x07: <=
+- 0x08: &
+- 0x09: ^
+- 0x10: &<<
+

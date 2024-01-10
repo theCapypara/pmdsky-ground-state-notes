@@ -1,0 +1,104 @@
+Debugger Ground State Requirements:
+- Hanger 0: COMMON
+  - Loaded SSB file:
+    - Name
+    - Memory address
+- Hanger 1: SSE
+  - SSE filename
+  - Loaded SSB file:
+    - Name
+    - Memory address
+  - Active Layers / Sections? / Sectors?
+- Hanger 2: SSS
+  - See SSE
+- Hanger 3: SSA
+  - See SSE
+- If possible assigned to hangers / layers:
+    - Active Actors
+        - Position, Direction, Actor ID, actor fn, etc. / all data like from ROM.
+    - Active Objects
+        - Position, Direction, Object ID, object fn, etc. / all data like from ROM.
+    - Active Performers
+        - Position, Direction, Performer ID, performer fn, etc. / all data like from ROM.
+    - Active Events
+        - Metadata like for ROM
+    - Active Triggers
+        - Metdata, if not in RAM load from ROM
+    - Position Markers
+        - Extract from loaded SSBs opcodes
+
+
+Strings related to Ground State changes:
+
+OpCodes changing Ground State:
+- ExecuteActing? (Unusued)
+- main_EnterGround (GroundMain ground request) -> Seems to reset to EVENT_DIVIDE and then to target map? Seems to be main map transition code
+- main_EnterGroundMulti? 
+- main_SetGround
+- supervision_Acting           -> ScriptLocateSet
+- supervision_ActingInvisible
+- supervision_ExecuteActing
+- supervision_ExecuteActingSub
+- supervision_ExecuteCommon
+- supervision_ExecuteEnter
+- supervision_ExecuteStation
+- supervision_ExecuteStationCommon
+- supervision_ExecuteStationCommonSub
+- supervision_ExecuteStationSub
+- supervision_ExecuteExport
+- supervision_ExecuteExportSub
+- supervision_LoadStation
+- supervision_Remove
+- supervision_RemoveActing
+- supervision_RemoveCommon
+- supervision_SpecialActing
+- supervision_Station
+- supervision_StationCommon
+- supervision_Suspend
+- supervision2_SpecialActing
+
+Not needed: - 0x022e5614        - "script locate set" <- New layer loaded?
+Not needed: -                   - "GroundSupervision execute" <- New script loaded?  / Alt: "GroundLives ScriptExecute"
+            - SsbLoad1 / SsbLoad2 - "script load  file name" <- New ssb file loaded
+            - StationLoadHanger + 0xC0 - "station load hanger " <- New ssa/sse/sss file loaded
+            - ScriptStationLoadTalk - "ScriptStation load talk" <- Talk slot loaded. ONE SLOT PER HANGER!?? (Hanger = 3 + slot?); begin of talk event, after this loads a hanger X. The id of the ssb file is printed here.
+            - GSC + 0x598       - "map change start" <- reset
+            - GSC + 0x3C        - "GROUND start mode" <- reset full / on
+            - GSC + 0x210       - "GroundMain quit process start" <- off
+???         - GSC + 0x4AC       - "return dungeon" <- reset / on
+Not needed: -                   - "GroundLives Remove" <- which layer removed?
+
+GSC = GroundMainLoop
+
+ScriptStationLoadTalk:
+    - r0: Hanger to load talk for
+    - r1: ID of SSB file to load
+    -> Final Hanger ID is r0 + 3
+    -> next ssb file is for that!
+    
+StationLoadHanger + 0xC0:
+    - r2: hanger id
+    - r3: pointer to str with full file path to ssa/sss/sse
+    -> next ssb file is for that!
+
+
+SsbLoad1 / SsbLoad2
+    - r1: ssb file path pointer
+    -> What is loaded for depends on context of previous function calls
+
+
+(Not needed, because we can just examine the slots for objects, actors, performers and events)
+
+- Dbg: at end of "GroundLives/Event/Performer/Object Add/Delete"
+
+# Actor: 0x02 - ID
+         0x15a - Direction?
+         0x15C - Xpos
+         0x160 - Ypos
+         0x164 - Xpos2?
+         0x168 - Ypos2?
+
+TalkCheck??
+
+Position Markers are not loaded from SSA but from script directly... Somehow force-link them with the SSA data?
+-> Only on editing the SSA files? When to sync with SSB? Maybe a button?

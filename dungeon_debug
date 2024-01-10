@@ -1,0 +1,19 @@
+Tiles:           0x021BDE14 -            - 56x32 20 bytes
+
+Monsters:        0x021CC85C - 0x021CC8FB - 40 entries
+Other entities:  0x021CC8FC - 0x021CCAFF - 129 entries, 64x items, 64x traps, hidden stairs
+
+Entity blocks are 184-bytes
+Monsters extra 5pew=76-bytes
+Items are 6-bytes
+Traps are 4-bytes
+
+Conditions:     0x021BA4C4...
+Dungeon ID:     0x022AB4FE
+Current floor:  0x021BA47D
+Wind Turns:     0x021BA4B8
+Enemy Spawn C:  0x021BA4B6
+
+
+Overlay 10:
+0x022BCA80 - 0x22DC220

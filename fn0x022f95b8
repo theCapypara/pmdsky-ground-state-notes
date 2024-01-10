@@ -1,0 +1,628 @@
+; EU: GroundLiveScriptExecute
+580: fcn.022f95b8 (int32_t arg1, int32_t arg2);
+; arg int32_t arg_0h @ fp-0x0
+; var int32_t var_20h @ sp+0x0
+; var int32_t var_1ch @ sp+0x4
+; var int32_t var_4h @ sp+0x1c
+; arg int32_t arg1 @ r0
+; arg int32_t arg2 @ r1
+0x022f95b8      push    {r3, r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x022f95bc      sub     sp, sp, 0x20
+0x022f95c0      mov     sl, r0     ; arg1
+0x022f95c4      sub     r0, sl, 1
+0x022f95c8      lsl     r0, r0, 0x10
+0x022f95cc      asr     r0, r0, 0x10
+0x022f95d0      lsl     r0, r0, 0x10
+0x022f95d4      lsr     r0, r0, 0x10
+0x022f95d8      cmp     r0, 1      ; 1
+0x022f95dc      mov     sb, r1     ; arg2
+0x022f95e0      mov     r8, 0
+0x022f95e4      mov     r0, 1
+0x022f95e8      bhi     0x22f9704
+0x022f95ec      ldr     r1, [str.GroundLives_ScriptExecute_hanger__3d__sector__3d__type_STATION] ; 0x2322670
+0x022f95f0      mov     r2, sl
+0x022f95f4      mov     r3, sb
+0x022f95f8      bl      fcn.0200c2c8
+{
+    0x0200c2c8      push    {r0, r1, r2, r3}
+    0x0200c2cc      add     sp, sp, 0x10
+    0x0200c2d0      bx      lr
+}
+0x022f95fc      ldr     r0, [aav.aav.0x02325838] ; 0x22f9800
+0x022f9600      mvn     r4, 1
+0x022f9604      ldr     r6, [r0, 4]
+0x022f9608      ldr     fp, [aav.aav.0x020a8890] ; 0x22f9804
+0x022f960c      mov     r7, r8
+0x022f9610      add     r5, r4, 1
+0x022f9614      ldrsh   r3, [r6, 2]
+0x022f9618      cmp     r3, r5
+0x022f961c      beq     0x22f96e8
+0x022f9620      ldrsh   r0, [r6, 6]
+0x022f9624      cmp     r0, sl
+0x022f9628      bne     0x22f96e8
+0x022f962c      cmp     sb, r4
+0x022f9630      ldrsbne r0, [r6, 8]
+0x022f9634      cmpne   r0, sb
+0x022f9638      bne     0x22f96e8
+0x022f963c      ldr     r1, [aav.aav.0x023226b0]
+0x022f9640      mov     r0, 1
+0x022f9644      mov     r2, r7
+0x022f9648      bl      fcn.0200c2c8
+0x022f964c      str     sb, [sp]
+0x022f9650      ldrsh   r2, [r6, 2]
+0x022f9654      add     r0, sp, 4  ; int32_t arg_28h
+0x022f9658      mov     r1, 3      ; int32_t arg1
+0x022f965c      mov     r3, sl
+0x022f9660      bl      fcn.022e683c
+{
+    400: fcn.022e683c (int32_t arg1, int32_t arg2, int32_t arg_28h);
+    ; var int32_t var_8h @ sp+0x0
+    ; var int32_t var_4h @ sp+0x4
+    ; arg int32_t arg_28h @ sp+0x30
+    ; arg int32_t arg1 @ r0
+    ; arg int32_t arg2 @ r1
+    0x022e683c      push    {r3, r4, r5, r6, r7, r8, sb, sl, fp, lr}
+    0x022e6840      sub     sp, sp, 8
+    0x022e6844      mov     r7, r3
+    0x022e6848      mov     sl, r0     ; arg1
+    0x022e684c      cmp     r7, 3      ; 3
+    0x022e6850      ldreq   r0, [aav.aav.0x023257ac] ; 0x22e69cc
+    0x022e6854      mov     sb, r1     ; arg2
+    0x022e6858      mov     r8, r2
+    0x022e685c      mov     r6, 0
+    0x022e6860      ldreq   r4, [r0, 0x18]
+    0x022e6864      beq     0x22e68d0
+    0x022e6868      cmp     r7, 5      ; 5
+    0x022e686c      ldreq   r0, [aav.aav.0x023257ac] ; 0x22e69cc
+    0x022e6870      ldreq   r4, [r0, 0x18]
+    0x022e6874      beq     0x22e68d0
+    0x022e6878      cmp     r7, 4      ; 4
+    0x022e687c      ldreq   r0, [aav.aav.0x023257ac] ; 0x22e69cc
+    0x022e6880      ldreq   r4, [r0, 0x18]
+    0x022e6884      beq     0x22e68d0
+    0x022e6888      cmp     r7, 6      ; 6
+    0x022e688c      ldreq   r0, [aav.aav.0x023257ac] ; 0x22e69cc
+    0x022e6890      ldreq   r4, [r0, 0x18]
+    0x022e6894      beq     0x22e68d0
+    0x022e6898      cmp     r7, 2      ; 2
+    0x022e689c      ldreq   r0, [aav.aav.0x023257ac] ; 0x22e69cc
+    0x022e68a0      ldreq   r4, [r0, 0x10]
+    0x022e68a4      beq     0x22e68d0
+    0x022e68a8      ldr     r2, [0x022e69d0]
+    0x022e68ac      sub     r1, r6, 1
+    0x022e68b0      ldrsh   r2, [r2, 0xa]
+    0x022e68b4      cmp     r2, r1
+    0x022e68b8      bne     0x22e68c8
+    0x022e68bc      bl      fcn.022dd1dc
+    {
+        36: fcn.022dd1dc (int32_t arg1);
+        ; arg int32_t arg1 @ r0
+        0x022dd1dc      mov     r1, 0
+        0x022dd1e0      str     r1, [r0]   ; arg1
+        0x022dd1e4      str     r1, [r0, 4] ; arg1
+        0x022dd1e8      str     r1, [r0, 8]
+        0x022dd1ec      sub     r1, r1, 1
+        0x022dd1f0      strh    r1, [r0, 0x14]
+        0x022dd1f4      strb    r1, [r0, 0x16]
+        0x022dd1f8      strh    r1, [r0, 0x18]
+        0x022dd1fc      bx      lr
+    }
+    0x022e68c0      mov     r0, r6
+    0x022e68c4      b       0x22e69c4
+    0x022e68c8      ldr     r0, [aav.aav.0x023257ac] ; 0x22e69cc
+    0x022e68cc      ldr     r4, [r0, 8] ; 0x23257b4
+                                       ; aav.0x023257b4
+    0x022e68d0      ldrh    r0, [r4, 2]
+    0x022e68d4      cmp     sb, 3      ; 3
+    0x022e68d8      add     r5, r4, 4
+    0x022e68dc      str     r0, [sp]
+    0x022e68e0      bne     0x22e6934
+    0x022e68e4      mov     fp, 0
+    0x022e68e8      b       0x22e6924
+    0x022e68ec      ldrh    r0, [r5, 2]
+    0x022e68f0      cmp     r0, sb
+    0x022e68f4      bne     0x22e691c
+    0x022e68f8      ldrh    r1, [r5, 4]
+    0x022e68fc      add     r0, sp, 4  ; int32_t arg1
+    0x022e6900      strh    r1, [sp + var_4h]
+    0x022e6904      bl      fcn.020653cc
+    0x022e6908      ldrsh   r0, [sp + var_4h]
+    0x022e690c      cmp     r0, r8
+    0x022e6910      ldrheq  r0, [r5]
+    0x022e6914      addeq   r6, r4, r0, lsl 1
+    0x022e6918      beq     0x22e697c
+    0x022e691c      add     r5, r5, 6
+    0x022e6920      add     fp, fp, 1
+    0x022e6924      ldr     r0, [sp]
+    0x022e6928      cmp     fp, r0
+    0x022e692c      blt     0x22e68ec
+    0x022e6930      b       0x22e697c
+    0x022e6934      mov     r1, 0
+    0x022e6938      b       0x22e6970
+    0x022e693c      ldrh    r0, [r5, 2]
+    0x022e6940      cmp     r0, sb
+    0x022e6944      bne     0x22e6968
+    0x022e6948      cmp     r8, 0
+    0x022e694c      blt     0x22e695c
+    0x022e6950      ldrh    r0, [r5, 4]
+    0x022e6954      cmp     r0, r8
+    0x022e6958      bne     0x22e6968
+    0x022e695c      ldrh    r0, [r5]
+    0x022e6960      add     r6, r4, r0, lsl 1
+    0x022e6964      b       0x22e697c
+    0x022e6968      add     r5, r5, 6
+    0x022e696c      add     r1, r1, 1
+    0x022e6970      ldr     r0, [sp]
+    0x022e6974      cmp     r1, r0
+    0x022e6978      blt     0x22e693c
+    0x022e697c      cmp     r6, 0
+    0x022e6980      beq     0x22e69b8
+    0x022e6984      stm     sl, {r4, r6}
+    0x022e6988      ldrh    r0, [r4]
+    0x022e698c      ldrsb   r1, [sp + arg_28h]
+    0x022e6990      add     r0, r4, r0, lsl 1
+    0x022e6994      str     r0, [sl, 8]
+    0x022e6998      cmp     r1, 0
+    0x022e699c      strh    r7, [sl, 0x14]
+    0x022e69a0      movlt   r1, 0
+    0x022e69a4      strb    r1, [sl, 0x16]
+    0x022e69a8      mvn     r0, 0
+    0x022e69ac      strh    r0, [sl, 0x18]
+    0x022e69b0      mov     r0, 1
+    0x022e69b4      b       0x22e69c4
+    0x022e69b8      mov     r0, sl
+    0x022e69bc      bl      fcn.022dd1dc
+    0x022e69c0      mov     r0, 0
+    0x022e69c4      add     sp, sp, 8
+    0x022e69c8      pop     {r3, r4, r5, r6, r7, r8, sb, sl, fp, pc}
+    0x022e69cc      .dword 0x023257ac ; aav.0x023257ac
+    0x022e69d0      eorseq  r5, r2, 180, 20
+}
+0x022f9664      cmp     r0, 0
+0x022f9668      bne     0x22f96a4
+0x022f966c      ldrsh   r1, [r6, 2]
+0x022f9670      mov     r0, 0xc
+0x022f9674      smulbb  r0, r1, r0
+0x022f9678      ldrsh   r0, [fp, r0]
+0x022f967c      add     r1, sp, 4
+0x022f9680      cmp     r0, 1      ; 1
+0x022f9684      cmpne   r0, 2      ; 2
+0x022f9688      mov     r0, 0
+0x022f968c      beq     0x22f969c
+0x022f9690      mov     r2, 0xc
+0x022f9694      bl      fcn.022dd3f0
+{
+    48: fcn.022dd3f0 (int32_t arg1, int32_t arg2);
+    ; arg int32_t arg1 @ r0
+    ; arg int32_t arg2 @ r1
+    0x022dd3f0      push    {r3, r4, r5, lr}
+    0x022dd3f4      mov     r4, r1     ; arg2
+    0x022dd3f8      mov     r5, r0     ; arg1
+    0x022dd3fc      mov     r0, r4
+    0x022dd400      mov     r1, r2
+    0x022dd404      bl      fcn.022e88f8
+    {
+        104: fcn.022e88f8 (int32_t arg1, int32_t arg2, int32_t arg_10h);
+        ; arg int32_t arg_10h @ sp+0x10
+        ; arg int32_t arg1 @ r0
+        ; arg int32_t arg2 @ r1
+        0x022e88f8      push    {r3, r4, r5, lr}
+        0x022e88fc      mov     r4, r0     ; arg1
+        0x022e8900      mov     r5, r1     ; arg2
+        0x022e8904      bl      fcn.022dd1dc
+        0x022e8908      ldr     r0, [aav.aav.0x023257e4] ; 0x22e8960
+        0x022e890c      add     r1, r5, r5, lsl 1
+        0x022e8910      ldr     r2, [r0]   ; 0x23257e4
+                                           ; aav.0x023257e4
+        0x022e8914      add     r3, r2, r1, lsl 1
+        0x022e8918      ldrh    r1, [r3, 4]
+        0x022e891c      cmp     r1, 0
+        0x022e8920      moveq   r0, 0
+        0x022e8924      popeq   {r3, r4, r5, pc}
+        0x022e8928      str     r2, [r4]
+        0x022e892c      ldrh    r2, [r3, 4]
+        0x022e8930      ldr     r3, [r0]   ; 0x23257e4
+                                           ; aav.0x023257e4
+        0x022e8934      mov     r1, 0
+        0x022e8938      add     r2, r3, r2, lsl 1
+        0x022e893c      str     r2, [r4, 4]
+        0x022e8940      ldr     r2, [r0, 4]
+        0x022e8944      sub     r0, r1, 1
+        0x022e8948      str     r2, [r4, 8]
+        0x022e894c      strh    r1, [r4, 0x14]
+        0x022e8950      strb    r1, [r4, 0x16]
+        0x022e8954      strh    r0, [r4, 0x18]
+        0x022e8958      mov     r0, 1
+        0x022e895c      pop     {r3, r4, r5, pc}
+        0x022e8960      .dword 0x023257e4 ; aav.0x023257e4
+    }
+    0x022dd408      mov     r0, 1
+    0x022dd40c      strh    r0, [r4, 0x18]
+    0x022dd410      cmp     r5, 0
+    0x022dd414      ldrsbne r0, [r5, 0x12]
+    0x022dd418      strbne  r0, [r4, 0x16]
+    0x022dd41c      pop     {r3, r4, r5, pc}
+}
+0x022f9698      b       0x22f96a4
+0x022f969c      mov     r2, 0xe
+0x022f96a0      bl      fcn.022dd3f0
+0x022f96a4      mov     r0, 0
+0x022f96a8      strh    r0, [sp + var_4h]
+0x022f96ac      add     r0, r6, 0x38 ; int32_t arg1
+0x022f96b0      add     r1, sp, 4
+0x022f96b4      bl      fcn.022dd308
+{
+    144: fcn.022dd308 (int32_t arg1);
+    ; arg int32_t arg1 @ r0
+    0x022dd308      ldrsh   r2, [r0, 0xe] ; arg1
+    0x022dd30c      cmp     r2, 0
+    0x022dd310      beq     0x22dd34c
+    0x022dd314      ldr     r2, [r0, 0x2c] ; arg1
+    0x022dd318      cmp     r2, 0
+    0x022dd31c      beq     0x22dd338
+    0x022dd320      ldr     r3, [r0, 0x28]
+    0x022dd324      ldr     r2, [r1, 4]
+    0x022dd328      cmp     r3, r2
+    0x022dd32c      bne     0x22dd34c
+    0x022dd330      mov     r0, 1
+    0x022dd334      bx      lr
+    0x022dd338      ldr     r3, [r0, 0x18]
+    0x022dd33c      ldr     r2, [r1, 4]
+    0x022dd340      cmp     r3, r2
+    0x022dd344      moveq   r0, 1
+    0x022dd348      bxeq    lr
+    0x022dd34c      ldrsh   r2, [r0, 0x7e]
+    0x022dd350      cmp     r2, 0
+    0x022dd354      beq     0x22dd390
+    0x022dd358      ldr     r2, [r0, 0x9c]
+    0x022dd35c      cmp     r2, 0
+    0x022dd360      beq     0x22dd37c
+    0x022dd364      ldr     r2, [r0, 0x98]
+    0x022dd368      ldr     r0, [r1, 4]
+    0x022dd36c      cmp     r2, r0
+    0x022dd370      bne     0x22dd390
+    0x022dd374      mov     r0, 1
+    0x022dd378      bx      lr
+    0x022dd37c      ldr     r2, [r0, 0x88]
+    0x022dd380      ldr     r0, [r1, 4]
+    0x022dd384      cmp     r2, r0
+    0x022dd388      moveq   r0, 1
+    0x022dd38c      bxeq    lr
+    0x022dd390      mov     r0, 0
+    0x022dd394      bx      lr
+}
+0x022f96b8      cmp     r0, 0
+0x022f96bc      bne     0x22f96e8
+0x022f96c0      add     r0, r6, 0x28 ; int32_t arg_8h
+0x022f96c4      add     r1, r6, 0x30 ; int32_t arg1
+0x022f96c8      bl      fcn.022f28ac
+{
+    48: fcn.022f28ac (int32_t arg1, int32_t arg2, int32_t arg_8h);
+    ; arg int32_t arg_8h @ sp+0x8
+    ; arg int32_t arg1 @ r0
+    ; arg int32_t arg2 @ r1
+    0x022f28ac      push    {r3, lr}
+    0x022f28b0      ldr     r2, [aav.aav.0x02325800] ; 0x22f28dc
+    0x022f28b4      mov     r3, r0     ; arg1
+    0x022f28b8      ldr     r0, [r2]   ; 0x2325800
+                                       ; aav.0x02325800
+    0x022f28bc      mov     r2, r1     ; arg2
+    0x022f28c0      cmp     r0, 0
+    0x022f28c4      moveq   r0, 0
+    0x022f28c8      popeq   {r3, pc}
+    0x022f28cc      mov     r1, r3
+    0x022f28d0      bl      fcn.022efdd8
+    {
+        40: fcn.022efdd8 (int32_t arg2);
+        ; arg int32_t arg2 @ r1
+        0x022efdd8      mov     r3, 0
+        0x022efddc      str     r3, [r1]   ; arg2
+        0x022efde0      str     r3, [r1, 4] ; arg2
+        0x022efde4      ldrb    r1, [r0, 0x1e0]
+        0x022efde8      lsl     r1, r1, 0xb
+        0x022efdec      str     r1, [r2]
+        0x022efdf0      ldrb    r0, [r0, 0x1e1]
+        0x022efdf4      lsl     r0, r0, 0xb
+        0x022efdf8      str     r0, [r2, 4]
+        0x022efdfc      bx      lr
+    }
+    0x022f28d4      mov     r0, 1
+    0x022f28d8      pop     {r3, pc}
+    0x022f28dc      .dword 0x02325800 ; aav.0x02325800
+}
+0x022f96cc      add     r0, r6, 0x38 ; int32_t arg1
+0x022f96d0      mov     r1, 0
+0x022f96d4      add     r2, sp, 4
+0x022f96d8      bl      fcn.022dd62c
+{
+    496: fcn.022dd62c (int32_t arg1);
+    ; var int32_t var_18h @ sp+0x0
+    ; var int32_t var_14h @ sp+0x4
+    ; var int32_t var_10h @ sp+0x8
+    ; var int32_t var_ch @ sp+0xc
+    ; var int32_t var_8h @ sp+0x10
+    ; var int32_t var_4h @ sp+0x14
+    ; arg int32_t arg1 @ r0
+    0x022dd62c      push    {r4, r5, r6, lr}
+    0x022dd630      sub     sp, sp, 0x18
+    0x022dd634      movs    r4, r2
+    0x022dd638      mov     r5, r0     ; arg1
+    0x022dd63c      moveq   r0, 0
+    0x022dd640      beq     0x22dd814
+    0x022dd644      ldr     r0, [r4, 4]
+    0x022dd648      cmp     r0, 0
+    0x022dd64c      moveq   r0, 0
+    0x022dd650      beq     0x22dd814
+    0x022dd654      ldrsh   r0, [r4, 0x18]
+    0x022dd658      cmp     r0, 3      ; 3
+    ;-- switch
+    0x022dd65c      addls   pc, pc, r0, lsl 2 ; case.0x22dd65c.0
+                                       ; 0x22dd664 ; switch table (4 cases) at 0x22dd664
+    ;-- default:                       ; from 0x22dd660
+    0x022dd660      b       0x22dd778
+    ;-- case 0:                        ; from 0x22dd65c
+    0x022dd664      b       36558700
+    ;-- case 1:                        ; from 0x22dd65c
+    0x022dd668      b       36558452
+    ;-- case 2:                        ; from 0x22dd65c
+    0x022dd66c      b       36558564
+    ;-- case 3:                        ; from 0x22dd65c
+    0x022dd670      b       36558520
+    0x022dd674      ldrsh   r0, [r5, 0xc]
+    0x022dd678      cmp     r0, 0
+    0x022dd67c      bne     0x22dd6a0
+    0x022dd680      add     lr, r5, 0xc
+    0x022dd684      add     ip, r5, 0x7c
+    0x022dd688      mov     r6, 7
+    0x022dd68c      ldm     lr!, {r0, r1, r2, r3}
+    0x022dd690      stm     ip!, {r0, r1, r2, r3}
+    0x022dd694      subs    r6, r6, 1
+    0x022dd698      bne     0x22dd68c
+    0x022dd69c      b       0x22dd79c
+    0x022dd6a0      ldrsh   r0, [r5, 0x7c]
+    0x022dd6a4      cmp     r0, 0
+    0x022dd6a8      beq     0x22dd79c
+    0x022dd6ac      add     r0, r5, 0x7c
+    0x022dd6b0      bl      fcn.022dd170
+    {
+        108: fcn.022dd170 (int32_t arg1, int32_t arg2);
+        ; arg int32_t arg1 @ r0
+        ; arg int32_t arg2 @ r1
+        0x022dd170      mvn     r1, 0
+        0x022dd174      mov     r3, 0
+        0x022dd178      strh    r1, [r0]   ; arg2
+        0x022dd17c      strh    r3, [r0, 2]
+        0x022dd180      strh    r1, [r0, 4]
+        0x022dd184      strb    r1, [r0, 6]
+        0x022dd188      str     r3, [r0, 0xc]
+        0x022dd18c      str     r3, [r0, 8]
+        0x022dd190      str     r3, [r0, 0x10]
+        0x022dd194      str     r3, [r0, 0x1c]
+        0x022dd198      str     r3, [r0, 0x18]
+        0x022dd19c      str     r3, [r0, 0x20]
+        0x022dd1a0      str     r3, [r0, 0x28]
+        0x022dd1a4      strh    r1, [r0, 0x32]
+        0x022dd1a8      strh    r3, [r0, 0x34]
+        0x022dd1ac      strb    r1, [r0, 0x36]
+        0x022dd1b0      strh    r3, [r0, 0x38]
+        0x022dd1b4      strh    r3, [r0, 0x3a]
+        0x022dd1b8      strh    r3, [r0, 0x3c]
+        0x022dd1bc      str     r3, [r0, 0x40]
+        0x022dd1c0      mov     r2, r3
+        0x022dd1c4      add     r1, r0, r3, lsl 2
+        0x022dd1c8      add     r3, r3, 1
+        0x022dd1cc      str     r2, [r1, 0x60]
+        0x022dd1d0      cmp     r3, 4      ; 4
+        0x022dd1d4      blt     0x22dd1c4
+        0x022dd1d8      bx      lr
+    }
+    0x022dd6b4      b       0x22dd79c
+    0x022dd6b8      ldrsh   r0, [r5, 0xc]
+    0x022dd6bc      cmp     r0, 0
+    0x022dd6c0      bne     0x22dd79c
+    0x022dd6c4      add     lr, r5, 0xc
+    0x022dd6c8      add     ip, r5, 0x7c
+    0x022dd6cc      mov     r6, 7
+    0x022dd6d0      ldm     lr!, {r0, r1, r2, r3}
+    0x022dd6d4      stm     ip!, {r0, r1, r2, r3}
+    0x022dd6d8      subs    r6, r6, 1
+    0x022dd6dc      bne     0x22dd6d0
+    0x022dd6e0      b       0x22dd79c
+    0x022dd6e4      ldrsh   r0, [r5, 0xc]
+    0x022dd6e8      cmp     r0, 2      ; 2
+    0x022dd6ec      cmpne   r0, 4      ; 4
+    0x022dd6f0      beq     0x22dd79c
+    0x022dd6f4      cmp     r0, 1      ; 1
+    0x022dd6f8      beq     0x22dd71c
+    0x022dd6fc      ldr     r1, [aav.aav.0x02317424] ; 0x22dd81c
+    0x022dd700      add     r0, sp, 0x10 ; int32_t arg_ch
+    0x022dd704      ldr     r2, [r1, 0x70]
+    0x022dd708      ldr     r3, [r1, 0x6c] ; 0x23175e4
+    0x022dd70c      ldr     r1, [str.execute_script_type_error_B] ; 0x2319be8 ; int32_t arg1
+    0x022dd710      str     r3, [sp + var_8h]
+    0x022dd714      str     r2, [sp + var_4h]
+    0x022dd718      bl      fcn.0200c2e4
+    {
+        112: fcn.0200c2e4 (int32_t arg1, int32_t arg_ch);
+        ; var int32_t var_100h @ sp+0x0
+        ; arg int32_t arg_ch @ sp+0x10c
+        ; arg int32_t arg1 @ r0
+        0x0200c2e4      push    {r0, r1, r2, r3}
+        0x0200c2e8      push    {r3, lr}
+        0x0200c2ec      sub     sp, sp, 0x100
+        0x0200c2f0      mov     r1, r0     ; uint32_t arg2
+        0x0200c2f4      ldr     r0, [str.Fatal] ; 0x2094f3c ; int32_t arg1
+        0x0200c2f8      bl      fcn.0200c1f4
+        0x0200c2fc      ldr     r1, [sp + arg_ch]
+        0x0200c300      add     r0, sp, 0
+        0x0200c304      cmp     r1, 0
+        0x0200c308      beq     0x200c32c
+        0x0200c30c      add     r2, sp, 0x10c
+        0x0200c310      bic     r2, r2, 3
+        0x0200c314      add     r2, r2, 4
+        0x0200c318      bl      fcn.020898dc
+        0x0200c31c      ldr     r1, [aav.aav.0x02094f50] ; 0x200c358 ; int32_t arg2
+        0x0200c320      add     r0, sp, 0  ; int32_t arg1
+        0x0200c324      bl      fcn.02089b44
+        0x0200c328      b       0x200c334
+        0x0200c32c      ldr     r1, [aav.aav.0x02094f54] ; int32_t arg1
+        0x0200c330      bl      fcn.02089a2c
+        0x0200c334      ldr     r0, [aav.aav.0x02094f5c] ; int32_t arg_8h
+        0x0200c338      add     r1, sp, 0
+        0x0200c33c      bl      fcn.0200c250
+        0x0200c340      bl      fcn.02002438
+        0x0200c344      add     sp, sp, 0x100
+        0x0200c348      pop     {r3, lr}
+        0x0200c34c      add     sp, sp, 0x10
+        0x0200c350      bx      lr
+        0x0200c354      .dword 0x02094f3c ; aav.0x02094f3c ; str.Fatal
+        0x0200c358      .dword 0x02094f50 ; aav.0x02094f50
+        0x0200c35c      .dword 0x02094f54 ; aav.0x02094f54
+        0x0200c360      .dword 0x02094f5c ; aav.0x02094f5c
+    }
+    0x022dd71c      ldrsh   r1, [r5, 0x7c]
+    0x022dd720      mvn     r0, 0
+    0x022dd724      cmp     r1, r0
+    0x022dd728      beq     0x22dd74c
+    0x022dd72c      ldr     r1, [aav.aav.0x02317424] ; 0x22dd81c
+    0x022dd730      add     r0, sp, 8  ; int32_t arg_ch
+    0x022dd734      ldr     r2, [r1, 8]
+    0x022dd738      ldr     r3, [r1, 4] ; 0x23175e4
+    0x022dd73c      ldr     r1, [str.execute_script_type_error_C] ; 0x2319c04 ; int32_t arg1
+    0x022dd740      str     r3, [sp + var_10h]
+    0x022dd744      str     r2, [sp + var_ch]
+    0x022dd748      bl      fcn.0200c2e4
+    0x022dd74c      add     r6, r5, 0xc
+    0x022dd750      add     lr, r5, 0x7c
+    0x022dd754      mov     ip, 7
+    0x022dd758      ldm     r6!, {r0, r1, r2, r3}
+    0x022dd75c      stm     lr!, {r0, r1, r2, r3}
+    0x022dd760      subs    ip, ip, 1
+    0x022dd764      bne     0x22dd758
+    0x022dd768      b       0x22dd79c
+    0x022dd76c      add     r0, r5, 0x7c
+    0x022dd770      bl      fcn.022dd170
+    0x022dd774      b       0x22dd79c
+    0x022dd778      ldr     r1, [aav.aav.0x02317424] ; 0x22dd81c
+    0x022dd77c      add     r0, sp, 0  ; int32_t arg_ch
+    0x022dd780      ldr     r2, [r1, 0x90]
+    0x022dd784      ldr     r1, [r1, 0x8c] ; 0x23175e4
+    0x022dd788      str     r2, [sp + var_14h]
+    0x022dd78c      str     r1, [sp]
+    0x022dd790      ldrsh   r2, [r4, 0x18]
+    0x022dd794      ldr     r1, [str.execute_script_type_error__d] ; 0x2319c20 ; int32_t arg1
+    0x022dd798      bl      fcn.0200c2e4
+    0x022dd79c      add     r0, r5, 0xc
+    0x022dd7a0      bl      fcn.022dd170
+    0x022dd7a4      ldrsh   r2, [r4, 0x18]
+    0x022dd7a8      mov     r1, 2
+    0x022dd7ac      mov     r0, 0
+    0x022dd7b0      strh    r2, [r5, 0xc]
+    0x022dd7b4      strh    r1, [r5, 0xe]
+    0x022dd7b8      ldrsh   r1, [r4, 0x14]
+    0x022dd7bc      strh    r1, [r5, 0x10]
+    0x022dd7c0      ldrsb   r1, [r4, 0x16]
+    0x022dd7c4      strb    r1, [r5, 0x12]
+    0x022dd7c8      ldr     r1, [r4]
+    0x022dd7cc      str     r1, [r5, 0x14]
+    0x022dd7d0      ldr     r1, [r4, 4]
+    0x022dd7d4      str     r1, [r5, 0x1c]
+    0x022dd7d8      str     r1, [r5, 0x18]
+    0x022dd7dc      ldr     r1, [r4, 8]
+    0x022dd7e0      str     r1, [r5, 0x20]
+    0x022dd7e4      str     r0, [r5, 0x24]
+    0x022dd7e8      str     r0, [r5, 0x2c]
+    0x022dd7ec      str     r0, [r5, 0x28]
+    0x022dd7f0      str     r0, [r5, 0x30]
+    0x022dd7f4      ldr     r0, [r5]
+    0x022dd7f8      ldr     r2, [r0, 0x14]
+    0x022dd7fc      cmp     r2, 0
+    0x022dd800      beq     0x22dd810
+    0x022dd804      ldr     r0, [r5, 4]
+    0x022dd808      add     r1, r5, 0x42
+    0x022dd80c      blx     r2
+    0x022dd810      mov     r0, 1
+    0x022dd814      add     sp, sp, 0x18
+    0x022dd818      pop     {r4, r5, r6, pc}
+    0x022dd81c      .dword 0x02317424 ; aav.0x02317424
+    0x022dd820      .dword 0x02319be8 ; aav.0x02319be8 ; str.execute_script_type_error_B
+    0x022dd824      .dword 0x02319c04 ; aav.0x02319c04 ; str.execute_script_type_error_C
+    0x022dd828      .dword 0x02319c20 ; aav.0x02319c20 ; str.execute_script_type_error__d
+}
+0x022f96dc      orr     r8, r8, r0
+0x022f96e0      mov     r0, 1
+0x022f96e4      strb    r0, [r6, 0x174]
+0x022f96e8      add     r0, r7, 1
+0x022f96ec      lsl     r0, r0, 0x10
+0x022f96f0      asr     r7, r0, 0x10
+0x022f96f4      cmp     r7, 0x18   ; 24
+0x022f96f8      add     r6, r6, 0x250
+0x022f96fc      blt     0x22f9614
+0x022f9700      b       0x22f97f0
+0x022f9704      ldr     r1, [str.GroundLives_ScriptExecute_hanger__3d__sector__3d__type_ACTING] ; 0x23226c4
+0x022f9708      mov     r2, sl
+0x022f970c      mov     r3, sb
+0x022f9710      bl      fcn.0200c2c8
+0x022f9714      ldr     r0, [aav.aav.0x02325838] ; 0x22f9800
+0x022f9718      mvn     r4, 1
+0x022f971c      ldr     r7, [r0, 4]
+0x022f9720      mov     r6, r8
+0x022f9724      add     r5, r4, 1
+0x022f9728      mov     fp, 1
+0x022f972c      ldrsh   r3, [r7, 2]
+0x022f9730      cmp     r3, r5
+0x022f9734      beq     0x22f97d8
+0x022f9738      cmp     sb, r4
+0x022f973c      ldrsbne r0, [r7, 9]
+0x022f9740      cmpne   r0, sb
+0x022f9744      bne     0x22f97d8
+0x022f9748      ldr     r1, [aav.aav.0x023226b0]
+0x022f974c      mov     r0, 1
+0x022f9750      mov     r2, r6
+0x022f9754      bl      fcn.0200c2c8
+0x022f9758      str     sb, [sp]
+0x022f975c      ldrsh   r2, [r7, 2]
+0x022f9760      add     r0, sp, 4  ; int32_t arg_28h
+0x022f9764      mov     r1, 3      ; int32_t arg1
+0x022f9768      mov     r3, sl
+0x022f976c      bl      fcn.022e683c
+0x022f9770      cmp     r0, 0
+0x022f9774      beq     0x22f979c
+0x022f9778      add     r0, r7, 0x38 ; int32_t arg1
+0x022f977c      mov     r1, 0
+0x022f9780      add     r2, sp, 4
+0x022f9784      strh    fp, [sp + var_4h]
+0x022f9788      bl      fcn.022dd62c
+0x022f978c      orr     r8, r8, r0
+0x022f9790      mov     r0, 1
+0x022f9794      strb    r0, [r7, 0x174]
+0x022f9798      b       0x22f97d8
+0x022f979c      cmp     sl, 3      ; 3
+0x022f97a0      bne     0x22f97d8
+0x022f97a4      mov     r0, 0      ; int32_t arg1
+0x022f97a8      add     r1, sp, 4  ; int32_t arg2
+0x022f97ac      mov     r2, 6
+0x022f97b0      bl      fcn.022dd3f0
+0x022f97b4      mov     r0, 1
+0x022f97b8      strh    r0, [sp + var_4h]
+0x022f97bc      add     r0, r7, 0x38 ; int32_t arg1
+0x022f97c0      mov     r1, 0
+0x022f97c4      add     r2, sp, 4
+0x022f97c8      bl      fcn.022dd62c
+0x022f97cc      orr     r8, r8, r0
+0x022f97d0      mov     r0, 1
+0x022f97d4      strb    r0, [r7, 0x174]
+0x022f97d8      add     r0, r6, 1
+0x022f97dc      lsl     r0, r0, 0x10
+0x022f97e0      asr     r6, r0, 0x10
+0x022f97e4      cmp     r6, 0x18   ; 24
+0x022f97e8      add     r7, r7, 0x250
+0x022f97ec      blt     0x22f972c
+0x022f97f0      mov     r0, r8
+0x022f97f4      add     sp, sp, 0x20
+0x022f97f8      pop     {r3, r4, r5, r6, r7, r8, sb, sl, fp, pc}
+0x022f97fc      .dword 0x02322670 ; aav.0x02322670 ; str.GroundLives_ScriptExecute_hanger__3d__sector__3d__type_STATION
+0x022f9800      .dword 0x02325838 ; aav.0x02325838
+0x022f9804      .dword 0x020a8890 ; aav.0x020a8890
+0x022f9808      .dword 0x023226b0 ; aav.0x023226b0
+0x022f980c      .dword 0x023226c4 ; aav.0x023226c4 ; str.GroundLives_ScriptExecute_hanger__3d__sector__3d__type_ACTING

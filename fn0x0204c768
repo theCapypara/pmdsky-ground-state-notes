@@ -1,0 +1,26 @@
+┌ 84: fcn.0204c768 (int32_t arg1);
+│           ; var int32_t var_8h @ sp+0x0
+│           ; var int32_t var_4h @ sp+0x4
+│           ; arg int32_t arg1 @ r0
+│           0x0204c768      10402de9       push {r4, lr}
+│           0x0204c76c      08d04de2       sub sp, sp, 8
+│           0x0204c770      0010a0e3       mov r1, 0
+│           0x0204c774      0040a0e1       mov r4, r0                  ; arg1
+│           0x0204c778      00008de2       add r0, sp, 0               ; int32_t arg1
+│           0x0204c77c      0120a0e1       mov r2, r1
+│           0x0204c780      13fcffeb       bl fcn.0204b7d4
+│           0x0204c784      30009fe5       ldr r0, [0x0204c7bc]        ; [0x204c7bc:4]=0x22ab9ec
+│           0x0204c788      0410a0e1       mov r1, r4
+│           0x0204c78c      012ba0e3       mov r2, 0x400
+│           0x0204c790      cfdafeeb       bl fcn.020032d4
+│           0x0204c794      00109de5       ldr r1, [sp]
+│           0x0204c798      04009de5       ldr r0, [sp + var_4h]
+│           0x0204c79c      fa10d1e1       ldrsh r1, [r1, 0xa]
+│           0x0204c7a0      000090e5       ldr r0, [r0]
+│           0x0204c7a4      000051e1       cmp r1, r0
+│           0x0204c7a8      0100a003       moveq r0, 1
+│           0x0204c7ac      0000a013       movne r0, 0
+│           0x0204c7b0      ff0000e2       and r0, r0, 0xff
+│           0x0204c7b4      08d08de2       add sp, sp, 8
+└           0x0204c7b8      1080bde8       pop {r4, pc}
+

@@ -1,0 +1,363 @@
+; SEE ALSO US = 0206549c IN 0x22E56B8 FuncLoadingScripts!
+; SAME FN!
+1224: fcn.02065818 (int32_t arg1, int32_t arg2);
+; var int32_t var_10h @ sp+0x0
+; var int32_t var_8h @ sp+0x8
+; arg int32_t arg1 @ r0
+; arg int32_t arg2 @ r1
+0x02065818      push    {r4, r5, r6, lr}
+0x0206581c      sub     sp, sp, 0x10
+0x02065820      mov     r6, r0     ; arg1
+0x02065824      mov     r5, r1     ; arg2
+0x02065828      bl      fcn.020653cc
+0x0206582c      mov     r4, r0
+0x02065830      mov     r0, 0
+0x02065834      strh    r0, [r5]
+0x02065838      ldrsh   lr, [r6]
+0x0206583c      sub     r1, r0, 1
+0x02065840      cmp     lr, r1
+0x02065844      subeq   r0, r0, 1
+0x02065848      beq     0x2065cd8
+0x0206584c      mov     r1, 0xc
+0x02065850      smulbb  r3, lr, r1
+0x02065854      ldr     ip, [aav.aav.0x020a8890] ; 0x2065ce0
+0x02065858      ldrsh   r2, [ip, r3]
+0x0206585c      add     r3, ip, r3
+0x02065860      cmp     r2, 3      ; 3
+0x02065864      bne     0x2065a30
+0x02065868      cmp     lr, 0x16   ; 22
+0x0206586c      blt     0x2065938
+0x02065870      cmp     lr, 0x19   ; 25
+0x02065874      bgt     0x2065938
+0x02065878      mov     r0, 0xd    ; uint32_t arg1
+0x0206587c      sub     r4, lr, 0x16
+0x02065880      bl      fcn.02003ed0
+0x02065884      cmp     r0, 0
+0x02065888      beq     0x20658bc
+0x0206588c      bl      0x22ea024
+0x02065890      cmp     r0, 0
+0x02065894      beq     0x20658bc
+0x02065898      ldr     r0, [aav.aav.0x020a715c]
+0x0206589c      lsl     r1, r4, 1
+0x020658a0      ldrsh   r0, [r0, r1] ; 0x20a7168
+                                   ; aav.0x020a7168
+0x020658a4      strh    r0, [r5]
+0x020658a8      cmp     r0, 0
+0x020658ac      mvneq   r0, 0
+0x020658b0      strheq  r0, [r6]
+0x020658b4      mvn     r0, 0
+0x020658b8      b       0x2065cd8
+0x020658bc      mov     r0, 5
+0x020658c0      bl      fcn.0200c198
+0x020658c4      cmp     r0, 0
+0x020658c8      beq     0x20658fc
+0x020658cc      ldrsh   r0, [r6]
+0x020658d0      cmp     r0, 0x16   ; 22
+0x020658d4      moveq   r0, 0x5f   ; '_'
+0x020658d8      strheq  r0, [r5]
+0x020658dc      subeq   r0, r0, 0x60
+0x020658e0      beq     0x2065cd8
+0x020658e4      cmp     r0, 0x17   ; 23
+0x020658e8      bne     0x2065a24
+0x020658ec      mov     r0, 0x22   ; '"'
+0x020658f0      strh    r0, [r5]
+0x020658f4      sub     r0, r0, 0x23
+0x020658f8      b       0x2065cd8
+0x020658fc      add     r0, sp, 8  ; int32_t arg1
+0x02065900      bl      fcn.02057180
+0x02065904      cmp     r4, r0
+0x02065908      bge     0x2065a24
+0x0206590c      ldr     r0, [aav.aav.0x020b138c] ; 0x2065ce8
+0x02065910      add     r1, sp, 8
+0x02065914      lsl     r2, r4, 1
+0x02065918      ldrsh   r2, [r1, r2]
+0x0206591c      ldr     r3, [r0]   ; 0x20b138c
+                                   ; aav.0x020b138c
+0x02065920      mov     r1, 0x44   ; 'D'
+0x02065924      sub     r0, r1, 0x45
+0x02065928      smlabb  r1, r2, r1, r3
+0x0206592c      ldrsh   r1, [r1, 4]
+0x02065930      strh    r1, [r5]
+0x02065934      b       0x2065cd8
+0x02065938      cmp     lr, 0x1a   ; 26
+0x0206593c      blt     0x2065a24
+0x02065940      cmp     lr, 0x1d   ; 29
+0x02065944      bgt     0x2065a24
+0x02065948      mov     r0, 0xd    ; uint32_t arg1
+0x0206594c      sub     r4, lr, 0x1a
+0x02065950      bl      fcn.02003ed0
+0x02065954      cmp     r0, 0
+0x02065958      beq     0x206598c
+0x0206595c      bl      0x22ea024
+0x02065960      cmp     r0, 0
+0x02065964      beq     0x206598c
+0x02065968      ldr     r0, [aav.aav.0x020a715c]
+0x0206596c      lsl     r1, r4, 1
+0x02065970      ldrsh   r0, [r0, r1]
+0x02065974      strh    r0, [r5]
+0x02065978      cmp     r0, 0
+0x0206597c      mvneq   r0, 0
+0x02065980      strheq  r0, [r6]
+0x02065984      mvn     r0, 0
+0x02065988      b       0x2065cd8
+0x0206598c      mov     r0, 5
+0x02065990      bl      fcn.0200c198
+0x02065994      cmp     r0, 0
+0x02065998      beq     0x20659e8
+0x0206599c      ldrsh   r0, [r6]
+0x020659a0      cmp     r0, 0x1a   ; 26
+0x020659a4      bne     0x20659bc
+0x020659a8      bl      fcn.02055b14
+0x020659ac      ldrsh   r1, [r0, 4]
+0x020659b0      mvn     r0, 0
+0x020659b4      strh    r1, [r5]
+0x020659b8      b       0x2065cd8
+0x020659bc      cmp     r0, 0x1b   ; 27
+0x020659c0      moveq   r0, 0x5f   ; '_'
+0x020659c4      strheq  r0, [r5]
+0x020659c8      subeq   r0, r0, 0x60
+0x020659cc      beq     0x2065cd8
+0x020659d0      cmp     r0, 0x1c   ; 28
+0x020659d4      bne     0x2065a24
+0x020659d8      mov     r0, 0x22   ; '"'
+0x020659dc      strh    r0, [r5]
+0x020659e0      sub     r0, r0, 0x23
+0x020659e4      b       0x2065cd8
+0x020659e8      add     r0, sp, 0  ; int32_t arg1
+0x020659ec      bl      fcn.020570ec
+0x020659f0      cmp     r4, r0
+0x020659f4      bge     0x2065a24
+0x020659f8      ldr     r0, [aav.aav.0x020b138c] ; 0x2065ce8
+0x020659fc      add     r1, sp, 0
+0x02065a00      lsl     r2, r4, 1
+0x02065a04      ldrsh   r2, [r1, r2]
+0x02065a08      ldr     r3, [r0]   ; 0x20b138c
+                                   ; aav.0x020b138c
+0x02065a0c      mov     r1, 0x44   ; 'D'
+0x02065a10      sub     r0, r1, 0x45
+0x02065a14      smlabb  r1, r2, r1, r3
+0x02065a18      ldrsh   r1, [r1, 4]
+0x02065a1c      strh    r1, [r5]
+0x02065a20      b       0x2065cd8
+0x02065a24      mvn     r0, 0
+0x02065a28      strh    r0, [r6]
+0x02065a2c      b       0x2065cd8
+0x02065a30      cmp     lr, 0x35   ; 53
+0x02065a34      bgt     0x2065ab0
+0x02065a38      bge     0x2065c1c
+0x02065a3c      cmp     lr, 0x32   ; 50
+0x02065a40      bgt     0x2065a94
+0x02065a44      bge     0x2065bdc
+0x02065a48      cmp     lr, 0xf    ; 15
+;-- switch
+0x02065a4c      addls   pc, pc, lr, lsl 2 ; case.0x2065a4c.0
+                                   ; 0x2065a54 ; switch table (16 cases) at 0x2065a54
+;-- default:                       ; from 0x2065a50
+0x02065a50      b       0x2065cc4
+;-- case 0:                        ; from 0x2065a4c
+0x02065a54      b       33971396
+;-- case 1:                        ; from 0x2065a4c
+0x02065a58      b       33970964
+;-- case 2:                        ; from 0x2065a4c
+0x02065a5c      b       33970980
+;-- case 3:                        ; from 0x2065a4c
+0x02065a60      b       33970996
+;-- case 4:                        ; from 0x2065a4c
+0x02065a64      b       33971012
+;-- case 5:                        ; from 0x2065a4c
+0x02065a68      b       33971396
+;-- case 6:                        ; from 0x2065a4c
+0x02065a6c      b       33971396
+;-- case 7:                        ; from 0x2065a4c
+0x02065a70      b       33971396
+;-- case 8:                        ; from 0x2065a4c
+0x02065a74      b       33971396
+;-- case 9:                        ; from 0x2065a4c
+0x02065a78      b       33971396
+;-- case 10:                       ; from 0x2065a4c
+0x02065a7c      b       33971396
+;-- case 11:                       ; from 0x2065a4c
+0x02065a80      b       33971396
+;-- case 12:                       ; from 0x2065a4c
+0x02065a84      b       33970964
+;-- case 13:                       ; from 0x2065a4c
+0x02065a88      b       33970980
+;-- case 14:                       ; from 0x2065a4c
+0x02065a8c      b       33970996
+;-- case 15:                       ; from 0x2065a4c
+0x02065a90      b       33971012
+0x02065a94      cmp     lr, 0x33   ; 51
+0x02065a98      bgt     0x2065aa4
+0x02065a9c      beq     0x2065bfc
+0x02065aa0      b       0x2065cc4
+0x02065aa4      cmp     lr, 0x34   ; 52
+0x02065aa8      beq     0x2065c9c
+0x02065aac      b       0x2065cc4
+0x02065ab0      cmp     lr, 0x37   ; 55
+0x02065ab4      bgt     0x2065ac8
+0x02065ab8      bge     0x2065c5c
+0x02065abc      cmp     lr, 0x36   ; 54
+0x02065ac0      beq     0x2065c3c
+0x02065ac4      b       0x2065cc4
+0x02065ac8      cmp     lr, 0x38   ; 56
+0x02065acc      bgt     0x2065ad8
+0x02065ad0      beq     0x2065c7c
+0x02065ad4      b       0x2065cc4
+0x02065ad8      sub     r2, lr, 0x39
+0x02065adc      cmp     r2, 0xa    ; 10
+;-- switch
+0x02065ae0      addls   pc, pc, r2, lsl 2 ; case.0x2065ae0.0
+                                   ; 0x2065ae8 ; switch table (11 cases) at 0x2065ae8
+;-- default:                       ; from 0x2065ae4
+0x02065ae4      b       0x2065cc4
+;-- case 0:                        ; from 0x2065ae0
+0x02065ae8      b       33971132
+;-- case 1:                        ; from 0x2065ae0
+0x02065aec      b       33971092
+;-- case 2:                        ; from 0x2065ae0
+0x02065af0      b       33971112
+;-- case 3:                        ; from 0x2065ae0
+0x02065af4      b       33970964
+;-- case 4:                        ; from 0x2065ae0
+0x02065af8      b       33970980
+;-- case 5:                        ; from 0x2065ae0
+0x02065afc      b       33970996
+;-- case 6:                        ; from 0x2065ae0
+0x02065b00      b       33971012
+;-- case 7:                        ; from 0x2065ae0
+0x02065b04      b       33971028
+;-- case 8:                        ; from 0x2065ae0
+0x02065b08      b       33971044
+;-- case 9:                        ; from 0x2065ae0
+0x02065b0c      b       33971060
+;-- case 10:                       ; from 0x2065ae0
+0x02065b10      b       33971076
+0x02065b14      bl      fcn.02055b40
+0x02065b18      ldrsh   r0, [r0, 4]
+0x02065b1c      strh    r0, [r5]
+0x02065b20      b       0x2065cd4
+0x02065b24      bl      fcn.02055b88
+0x02065b28      ldrsh   r0, [r0, 4]
+0x02065b2c      strh    r0, [r5]
+0x02065b30      b       0x2065cd4
+0x02065b34      bl      fcn.02055bd0
+0x02065b38      ldrsh   r0, [r0, 4]
+0x02065b3c      strh    r0, [r5]
+0x02065b40      b       0x2065cd4
+0x02065b44      bl      fcn.02056c90
+0x02065b48      ldrsh   r0, [r0, 4]
+0x02065b4c      strh    r0, [r5]
+0x02065b50      b       0x2065cd4
+0x02065b54      bl      fcn.02055aec
+0x02065b58      ldrsh   r0, [r0, 4]
+0x02065b5c      strh    r0, [r5]
+0x02065b60      b       0x2065cd4
+0x02065b64      bl      fcn.02055b14
+0x02065b68      ldrsh   r0, [r0, 4]
+0x02065b6c      strh    r0, [r5]
+0x02065b70      b       0x2065cd4
+0x02065b74      mov     r1, 0x3e   ; '>'
+0x02065b78      bl      fcn.0204b824
+0x02065b7c      strh    r0, [r5]
+0x02065b80      b       0x2065cd4
+0x02065b84      mov     r1, 0x40   ; '@'
+0x02065b88      bl      fcn.0204b824
+0x02065b8c      strh    r0, [r5]
+0x02065b90      b       0x2065cd4
+0x02065b94      ldr     r2, [aav.aav.0x020b144c] ; 0x2065cec
+0x02065b98      sub     r0, r1, 0xd
+0x02065b9c      ldrsh   r1, [r2, 0xa]
+0x02065ba0      strh    r1, [r5]
+0x02065ba4      b       0x2065cd8
+0x02065ba8      ldr     r2, [aav.aav.0x020b144c] ; 0x2065cec
+0x02065bac      sub     r0, r1, 0xd
+0x02065bb0      ldrsh   r1, [r2, 4]
+0x02065bb4      strh    r1, [r5]
+0x02065bb8      b       0x2065cd8
+0x02065bbc      ldr     r0, [aav.aav.0x020b144c] ; 0x2065cec
+0x02065bc0      ldrsh   r0, [r0, 0xc]
+0x02065bc4      cmp     r0, 0
+0x02065bc8      strhne  r0, [r5]
+0x02065bcc      subeq   r0, r1, 0xd
+0x02065bd0      strheq  r0, [r6]
+0x02065bd4      mvn     r0, 0
+0x02065bd8      b       0x2065cd8
+0x02065bdc      ldr     r0, [aav.aav.0x020b144c] ; 0x2065cec
+0x02065be0      ldrsh   r0, [r0, 0x10]
+0x02065be4      strh    r0, [r5]
+0x02065be8      cmp     r0, 0
+0x02065bec      subeq   r0, r1, 0xd
+0x02065bf0      strheq  r0, [r6]
+0x02065bf4      mvn     r0, 0
+0x02065bf8      b       0x2065cd8
+0x02065bfc      ldr     r0, [aav.aav.0x020b144c] ; 0x2065cec
+0x02065c00      ldrsh   r0, [r0, 0xe]
+0x02065c04      strh    r0, [r5]
+0x02065c08      cmp     r0, 0
+0x02065c0c      mvneq   r0, 0
+0x02065c10      strheq  r0, [r6]
+0x02065c14      mvn     r0, 0
+0x02065c18      b       0x2065cd8
+0x02065c1c      ldr     r0, [aav.aav.0x020b144c] ; 0x2065cec
+0x02065c20      ldrsh   r0, [r0, 2]
+0x02065c24      strh    r0, [r5]
+0x02065c28      cmp     r0, 0
+0x02065c2c      subeq   r0, r1, 0xd
+0x02065c30      strheq  r0, [r6]
+0x02065c34      mvn     r0, 0
+0x02065c38      b       0x2065cd8
+0x02065c3c      ldr     r0, [aav.aav.0x020b144c] ; 0x2065cec
+0x02065c40      ldrsh   r0, [r0]   ; 0x20b144c
+                                   ; aav.0x020b144c
+0x02065c44      strh    r0, [r5]
+0x02065c48      cmp     r0, 0
+0x02065c4c      subeq   r0, r1, 0xd
+0x02065c50      strheq  r0, [r6]
+0x02065c54      mvn     r0, 0
+0x02065c58      b       0x2065cd8
+0x02065c5c      ldr     r0, [aav.aav.0x020b144c] ; 0x2065cec
+0x02065c60      ldrsh   r0, [r0, 8]
+0x02065c64      strh    r0, [r5]
+0x02065c68      cmp     r0, 0
+0x02065c6c      subeq   r0, r1, 0xd
+0x02065c70      strheq  r0, [r6]
+0x02065c74      mvn     r0, 0
+0x02065c78      b       0x2065cd8
+0x02065c7c      ldr     r0, [aav.aav.0x020b144c] ; 0x2065cec
+0x02065c80      ldrsh   r0, [r0, 6]
+0x02065c84      strh    r0, [r5]
+0x02065c88      cmp     r0, 0
+0x02065c8c      subeq   r0, r1, 0xd
+0x02065c90      strheq  r0, [r6]
+0x02065c94      mvn     r0, 0
+0x02065c98      b       0x2065cd8
+0x02065c9c      mov     r0, 0
+0x02065ca0      mov     r1, 0x44   ; 'D'
+0x02065ca4      bl      fcn.0204b824
+0x02065ca8      strh    r0, [r5]
+0x02065cac      ldrsh   r0, [r5]
+0x02065cb0      cmp     r0, 0
+0x02065cb4      mvneq   r0, 0
+0x02065cb8      strheq  r0, [r6]
+0x02065cbc      mvn     r0, 0
+0x02065cc0      b       0x2065cd8
+0x02065cc4      ldrsh   r0, [r5]
+0x02065cc8      cmp     r0, 0
+0x02065ccc      ldrsheq r0, [r3, 2]
+0x02065cd0      strheq  r0, [r5]
+0x02065cd4      mov     r0, r4
+0x02065cd8      add     sp, sp, 0x10
+0x02065cdc      pop     {r4, r5, r6, pc}
+0x02065ce0      .dword 0x020a8890 ; aav.0x020a8890
+0x02065ce4      .dword 0x020a715c ; aav.0x020a715c
+0x02065ce8      .dword 0x020b138c ; aav.0x020b138c
+0x02065cec      .dword 0x020b144c ; aav.0x020b144c
+0x02065cf0      push    {r0, r1, r2, r3}
+0x02065cf4      push    {r3, lr}
+0x02065cf8      add     r0, sp, 8
+0x02065cfc      add     r1, sp, 0
+0x02065d00      bl      fcn.02065818
+0x02065d04      ldrsh   r0, [sp]
+0x02065d08      pop     {r3, lr}
+0x02065d0c      add     sp, sp, 0x10
+0x02065d10      bx      lr

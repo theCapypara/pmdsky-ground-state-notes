@@ -1,0 +1,61 @@
+Execute lives %3d %3d  command %02x
+script load  file name [%s]
+station load hanger %d file name [%s]
+script locate set %3d %3d
+ScriptStation prepare load common %d
+ScriptStation prepare load %d %s
+ScriptStation prepare load only %d %s
+ScriptStation prepare load acting %d %s
+ScriptStation prepare load talk %d
+ScriptStation load common %d
+ScriptStation load %d %s %d
+ScriptStation load acting %d %s %d
+ScriptStation load talk export %s
+ScriptStation load talk %d %d
+ScriptStation_RemoveAll
+script load  file name [%s]
+GROUND start mode %d[%d]
+GroundMain quit process start
+GroundSupervision ExecuteRequestCancel ==================
+GroundSupervision ExecuteCommon request %3d %d ==================
+GroundSupervision ExecuteEnter %3d ====
+GroundSupervision ExecuteStationCommon %3d %3d %d =======
+GroundSupervision ExecuteStation %3d %s %3d %d =======
+GroundSupervision ExecuteActing %3d %s %3d %d =======
+GroundSupervision ExecuteExport %s =======
+GroundSupervision ExecuteTalk %3d %d =======
+GroundSupervision LoadStation %3d %s =======
+GroundSupervision execute B %d
+GroundSupervision execute A %d
+GroundLives Locate id %3d  kind %3d  index %3d
+GroundLive Add id %3d  kind %3d  type %3d  hanger %3d  sector %3d
+GroundLives Locate kind %3d  px %8d  py %8d
+GroundLives Remove hanger %3d sector %3d
+GroundLives Delete id %3d
+GroundLives Alternate hanger %3d sector %3d
+GroundLives Execute %3d  kind %3d  %p
+GroundLives RequestExecute id %3d  kind %3d  hanger %3d  script %3d
+GroundLives ScriptExecute hanger %3d  sector %3d  type STATION
+GroundLives ScriptExecute hanger %3d  sector %3d  type ACTING
+GroundLives ScriptSuspend hanger %3d  sector %3d  type STATION
+GroundLives ScriptSuspend hanger %3d  sector %3d  type ACTING
+GroundObject Add id %3d  kind %3d[%3d]  type %3d  hanger %3d  sector %3d
+GroundObject Remove hanger %3d sector %3d
+GroundObject Delete id %3d
+GroundObject Altemate hanger %3d sector %3d
+GroundObject RequestExecute id %3d  kind %3d  hanger %3d  script %3d
+GroundObject ScriptExecute hanger %3d  sector %3d  type STATION
+GroundObject ScriptExecute hanger %3d  sector %3d  type ACTING
+GroundObject ScriptSuspend hanger %3d  sector %3d  type STATION
+GroundObject ScriptSuspend hanger %3d  sector %3d  type ACTING
+GroundPerformer Add id %3d  kind %3d  type %3d  hanger %3d  sector %3d
+GroundPerformer Remove hanger %3d sector %3d
+GroundPerformer Delete id %3d
+GroundPerformer ScriptExecute hanger %3d  sector %3d  type STATION
+GroundPerformer ScriptExecute hanger %3d  sector %3d  type ACTING
+GroundPerformer ScriptSuspend hanger %3d  sector %3d  type STATION
+GroundPerformer ScriptSuspend hanger %3d  sector %3d  type ACTING
+GroundEvent Add id %3d  kind %3d  hanger %3d  sector %3d
+GroundEvent Delete id %3d
+GroundEvent Alternate hanger %3d sector %3d
+GroundEvent RequestExecute id %3d  kind %3d  hanger %3d  script %3d

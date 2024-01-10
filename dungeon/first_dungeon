@@ -1,0 +1,38 @@
+I finally got some time to take a closer look at the dungeon related notes @End#3983 and @UsernameFodder#0368 have provided! There really are great! 
+I think I'll change my plans and add dungeon editing into SkyTemple next, because this is really motivating!
+
+End, you wrote you weren't sure how the game knows which scripts to load after leaving a dungeon.
+The game always fires up the script coroutine EVENT_DIVDIE when switching from Dungeon mode to Ground
+
+START
+SCRIPT_D01P11B_m01a0208.ssb.exps:
+
+Part of coroutine EVENT_M01_01_02 (last script)
+
+dungeon_mode(1) = DMODE_OPEN;
+main_EnterDungeon(1, 0);
+switch ( message_Menu(MENU_DUNGEON_RESULT) ) { }
+main_EnterDungeon(-1, 0);
+hold;
+end;
+
+DEFEAT:
+coroutine EVENT_M01_03:
+SCRIPT_D01P11B_m01a0301.ssb.exps
+defeated.
+
+START and DEFEAT
+controlled by EVENT_DIVIDE_FIRST.
+
+If SCENARIO_MAIN[0] is 2. If SCENARIO_MAIN[1] is 0, EVENT_M01_01_02 is played. If it is 2 or 3 the EVENT_M01_03 is played.
+
+
+SUCCESS:
+coroutine EVENT_M01_07_08.
+GETOUT_SCENARIO_DUNGEON: When GROUND_START_MODE is 8 and DUNGEON_ENTER is 2.
+
+EVENT_M01_04 before boss fight.
+EVENT_M01_05 before boss fight if fained first.
+-> GETOUT_SCENARIO_DUNGEON: When GROUND_START_MODE is 8 and DUNGEON_ENTER is 1.
+-> If SCENARIO_MAIN == 2,2 then M01_04, if SCENARIO_MAIN == 2,3 then M01_05.
+

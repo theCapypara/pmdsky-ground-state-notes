@@ -1,0 +1,889 @@
+/home/marco/.virtualenvs/skytemple/bin/python /home/marco/austausch/dev/skytemple/ssb_debugger/skytemple_ssb_debugger/sandbox.py
+Microphone successfully inited.
+DeSmuME 0.9.12 git#0 x64-JIT SSE2
+SoftRasterizer: Running using 8 additional threads. (Multithreading enabled.)
+
+ROM game code: C2SP
+ROM crc: A0B05EFF
+ROM serial: NTR-C2SP-EUR
+ROM chipID: 00007FC2
+ROM internal name: POKEDUN SORA
+ROM developer: Nintendo
+
+Slot1 auto-selected device type: Retail MC+ROM
+Slot2 auto-selected device type: None (0xFF)
+BackupDevice: size = 2 Mbit
+CPU mode: Interpreter
+Already decrypted.
+WIFI: MAC Address = 00:09:BF:12:34:56
+WIFI: Emulation level is OFF.
+FileDevice Init 'Null'
+FileDevice Init 'CARD ROM'
+bgm stop   0
+GET VAR VALUE: var:SCENARIO_SELECT + offset 0: 0
+GET VAR VALUE: var:SCENARIO_SELECT + offset 1: 0
+SCENARIO CALC [  2]    0    0 ->    0    0
+GET VAR VALUE: var:SCENARIO_MAIN + offset 0: 0
+GET VAR VALUE: var:SCENARIO_MAIN + offset 1: 0
+SCENARIO CALC [  3]    0    0 ->    0    0
+GET VAR VALUE: var:SCENARIO_SIDE + offset 0: 0
+GET VAR VALUE: var:SCENARIO_SIDE + offset 1: 0
+SCENARIO CALC [  4]    0    0 ->    0    0
+GET VAR VALUE: var:SCENARIO_SUB1 + offset 0: 0
+GET VAR VALUE: var:SCENARIO_SUB1 + offset 1: 0
+SCENARIO CALC [  5]    0    0 ->    0    0
+GET VAR VALUE: var:SCENARIO_SUB2 + offset 0: 0
+GET VAR VALUE: var:SCENARIO_SUB2 + offset 1: 0
+SCENARIO CALC [  6]    0    0 ->    0    0
+GET VAR VALUE: var:SCENARIO_SUB3 + offset 0: 0
+GET VAR VALUE: var:SCENARIO_SUB3 + offset 1: 0
+SCENARIO CALC [  7]    0    0 ->    0    0
+GET VAR VALUE: var:SCENARIO_SUB4 + offset 0: 0
+GET VAR VALUE: var:SCENARIO_SUB4 + offset 1: 0
+SCENARIO CALC [  8]    0    0 ->    0    0
+GET VAR VALUE: var:SCENARIO_SUB5 + offset 0: 0
+GET VAR VALUE: var:SCENARIO_SUB5 + offset 1: 0
+SCENARIO CALC [  9]    0    0 ->    0    0
+GET VAR VALUE: var:SCENARIO_SUB6 + offset 0: 0
+GET VAR VALUE: var:SCENARIO_SUB6 + offset 1: 0
+SCENARIO CALC [ 10]    0    0 ->    0    0
+GET VAR VALUE: var:SCENARIO_SUB7 + offset 0: 0
+GET VAR VALUE: var:SCENARIO_SUB7 + offset 1: 0
+SCENARIO CALC [ 11]    0    0 ->    0    0
+GET VAR VALUE: var:SCENARIO_SUB8 + offset 0: 0
+GET VAR VALUE: var:SCENARIO_SUB8 + offset 1: 0
+SCENARIO CALC [ 12]    0    0 ->    0    0
+bgm stop   0
+GET VAR VALUE: var:GROUND_START_MODE + offset 0: 0
+script load  file name [SCRIPT/COMMON/unionall.ssb]
+GET VAR VALUE: var:GROUND_ENTER + offset 0: 323
+GET VAR VALUE: var:GROUND_ENTER_LINK + offset 0: 0
+GroundSupervision ExecuteCommon request  78 0 ==================
+GroundSupervision execute A 2
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:0 - unk12:0 - ssb_file_grp_addr:0x212fcc0 - ssb_file_opc_addr:0x2132c56 - *current_op_code:supervision_ExecuteActingSub   - ssb_file_str_table_addr:0x213b22c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x       0 - unk38:0x       0 - unk3c:0 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+ScriptStation prepare load common 276
+GroundSupervision execute A 6
+ScriptStation prepare load common 276
+ScriptStation load common 276
+ScriptStation_RemoveAll
+GroundLives Alternate hanger   3 sector  -2
+GroundObject Altemate hanger   3 sector  -2
+GroundPerformer Remove hanger   3 sector  -2
+station load hanger 3 file name [SCRIPT/S05P01A/t02a0101.ssa]
+script load  file name [SCRIPT/S05P01A/t02a0101.ssb]
+GroundSupervision execute B 6
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cca - *current_op_code:sound_Stop                     - ssb_file_str_table_addr:0x2120d90 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x       0 - unk38:0x 2132c58 - unk3c:3 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+bgm stop   0
+bgm2 stop   0
+me stop   0
+se stop  num 16128
+se stop 16128   0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cca - *current_op_code:BranchVariation                - ssb_file_str_table_addr:0x2120d90 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120cca - unk38:0x 2120ccc - unk3c:0 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cca - *current_op_code:back2_SetMode                  - ssb_file_str_table_addr:0x2120d90 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120ccc - unk38:0x 2120cce - unk3c:2 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+script ground sub call   5
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cca - *current_op_code:back_SetGround                 - ssb_file_str_table_addr:0x2120d90 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120cd2 - unk38:0x 2120cd4 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+GroundMap Select 276
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cca - *current_op_code:supervision_Acting             - ssb_file_str_table_addr:0x2120d90 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120cd6 - unk38:0x 2120cd8 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+script locate set   3   0
+GroundPerformer Add id   0  kind   0  type 36836232  hanger 34659408  sector   0
+GroundLives ScriptExecute hanger   3  sector   0  type ACTING
+GroundObject ScriptExecute hanger   3  sector   0  type ACTING
+GroundPerformer ScriptExecute hanger   3  sector   0  type ACTING
+    [  0]  kind   0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cca - *current_op_code:performer                      - ssb_file_str_table_addr:0x2120d90 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120cda - unk38:0x 2120cdc - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cca - *current_op_code:message_Menu                   - ssb_file_str_table_addr:0x2120d90 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120cde - unk38:0x 2120ce0 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+ScriptData_Command_MENU request 61
+script menu request  61
+ScriptData_Command_MENU init result 0
+_ScriptCaseProcess 0
+    CASE OUT       Jump[0087]
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cca - *current_op_code:Jump                           - ssb_file_str_table_addr:0x2120d90 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120ce4 - unk38:0x 2120ce6 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cca - *current_op_code:Wait                           - ssb_file_str_table_addr:0x2120d90 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120ce8 - unk38:0x 2120cea - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:5 - *script_target_id:0 - script_target_type:5 - unkC:3 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120ce2 - *current_op_code:camera_SetMyself               - ssb_file_str_table_addr:0x2120d90 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x       0 - unk38:0x       0 - unk3c:0 - unk40:0x       0 - unk42:0x       0 - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+GroundSubMapPenetrate Select 276
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cca - *current_op_code:performer                      - ssb_file_str_table_addr:0x2120d90 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d2a - unk38:0x 2120d2c - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cca - *current_op_code:screen2_FadeIn                 - ssb_file_str_table_addr:0x2120d90 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d2e - unk38:0x 2120d30 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cca - *current_op_code:screen_FadeInAll               - ssb_file_str_table_addr:0x2120d90 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d3c - unk38:0x 2120d3e - unk3c:2 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:5 - *script_target_id:0 - script_target_type:5 - unkC:3 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120d32 - *current_op_code:SetPositionMark                - ssb_file_str_table_addr:0x2120d90 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x       0 - unk38:0x 2120ce4 - unk3c:0 - unk40:0x       0 - unk42:0x       0 - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cca - *current_op_code:Wait                           - ssb_file_str_table_addr:0x2120d90 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d42 - unk38:0x 2120d44 - unk3c:2 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cca - *current_op_code:screen2_FadeOut                - ssb_file_str_table_addr:0x2120d90 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d48 - unk38:0x 2120d4a - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cca - *current_op_code:screen_FadeOutAll              - ssb_file_str_table_addr:0x2120d90 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d4c - unk38:0x 2120d4e - unk3c:2 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cca - *current_op_code:Wait                           - ssb_file_str_table_addr:0x2120d90 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d52 - unk38:0x 2120d54 - unk3c:2 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cca - *current_op_code:performer                      - ssb_file_str_table_addr:0x2120d90 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d58 - unk38:0x 2120d5a - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cca - *current_op_code:screen2_FadeIn                 - ssb_file_str_table_addr:0x2120d90 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d5c - unk38:0x 2120d5e - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cca - *current_op_code:screen_FadeInAll               - ssb_file_str_table_addr:0x2120d90 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d6a - unk38:0x 2120d6c - unk3c:2 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:5 - *script_target_id:0 - script_target_type:5 - unkC:3 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120d60 - *current_op_code:SetPositionMark                - ssb_file_str_table_addr:0x2120d90 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x       0 - unk38:0x 2120d34 - unk3c:4 - unk40:0x       0 - unk42:0x       0 - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cca - *current_op_code:Wait                           - ssb_file_str_table_addr:0x2120d90 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d70 - unk38:0x 2120d72 - unk3c:2 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cca - *current_op_code:message_Menu                   - ssb_file_str_table_addr:0x2120d90 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d76 - unk38:0x 2120d78 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+ScriptData_Command_MENU request 62
+script menu request  62
+ScriptData_Command_MENU init result 0
+_ScriptCaseProcess 0
+    CASE OUT screen2_FadeOut[00ea]
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cca - *current_op_code:screen2_FadeOut                - ssb_file_str_table_addr:0x2120d90 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d7a - unk38:0x 2120d7c - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cca - *current_op_code:screen_FadeOutAll              - ssb_file_str_table_addr:0x2120d90 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d7e - unk38:0x 2120d80 - unk3c:2 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cca - *current_op_code:back2_SetMode                  - ssb_file_str_table_addr:0x2120d90 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d84 - unk38:0x 2120d86 - unk3c:2 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+script ground sub call   0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cca - *current_op_code:End                            - ssb_file_str_table_addr:0x2120d90 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d8a - unk38:0x 2120d8c - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:0 - unk12:0 - ssb_file_grp_addr:0x212fcc0 - ssb_file_opc_addr:0x2132c56 - *current_op_code:ProcessSpecial                 - ssb_file_str_table_addr:0x213b22c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2132c56 - unk38:0x 2132c58 - unk3c:3 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+ScriptData_Command_ProcessSpecial  24   0 34693500
+script special process call  24
+GroundMain game end request   0
+ScriptData_Command_ProcessSpecial result  24   0
+_ScriptCaseProcess 0
+    CASE OUT       Hold[0082]
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:0 - unk12:0 - ssb_file_grp_addr:0x212fcc0 - ssb_file_opc_addr:0x2132c56 - *current_op_code:Hold                           - ssb_file_str_table_addr:0x213b22c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2132c5e - unk38:0x 2132c60 - unk3c:3 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+GroundPerformer Delete id   0
+GET VAR VALUE: var:GROUND_START_MODE + offset 0: 0
+script load  file name [SCRIPT/COMMON/unionall.ssb]
+GET VAR VALUE: var:GROUND_ENTER + offset 0: 323
+GET VAR VALUE: var:GROUND_ENTER_LINK + offset 0: 0
+GroundSupervision ExecuteCommon request  79 0 ==================
+GroundSupervision execute A 2
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:0 - unk12:0 - ssb_file_grp_addr:0x212fcc0 - ssb_file_opc_addr:0x2132c68 - *current_op_code:ProcessSpecial                 - ssb_file_str_table_addr:0x213b22c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x       0 - unk38:0x 2132c68 - unk3c:0 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+ScriptData_Command_ProcessSpecial  23   0 34693500
+script special process call  23
+ScriptData_Command_ProcessSpecial result  23   0
+_ScriptCaseProcess 0
+    CASE OUT ProcessSpecial[00cc]
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:0 - unk12:0 - ssb_file_grp_addr:0x212fcc0 - ssb_file_opc_addr:0x2132c68 - *current_op_code:ProcessSpecial                 - ssb_file_str_table_addr:0x213b22c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2132c68 - unk38:0x 2132c6a - unk3c:3 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+ScriptData_Command_ProcessSpecial  22   1 34693500
+script special process call  22
+ScriptData_Command_ProcessSpecial result  22   0
+_ScriptCaseProcess 0
+    CASE OUT supervision_ExecuteActingSub[012d]
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:0 - unk12:0 - ssb_file_grp_addr:0x212fcc0 - ssb_file_opc_addr:0x2132c68 - *current_op_code:supervision_ExecuteActingSub   - ssb_file_str_table_addr:0x213b22c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2132c70 - unk38:0x 2132c72 - unk3c:3 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+ScriptStation prepare load common 300
+GroundSupervision execute A 6
+ScriptStation prepare load common 300
+ScriptStation load common 300
+ScriptStation_RemoveAll
+GroundLives Alternate hanger   3 sector  -2
+GroundObject Altemate hanger   3 sector  -2
+GroundPerformer Remove hanger   3 sector  -2
+station load hanger 3 file name [SCRIPT/S13P02A/t02a0201.ssa]
+script load  file name [SCRIPT/S13P02A/t02a0201.ssb]
+GroundSupervision execute B 6
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cd6 - *current_op_code:ProcessSpecial                 - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x       0 - unk38:0x 2132c7a - unk3c:3 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+ScriptData_Command_ProcessSpecial  23   0 34693500
+script special process call  23
+ScriptData_Command_ProcessSpecial result  23   0
+_ScriptCaseProcess 0
+    CASE OUT back2_SetMode[0018]
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cd6 - *current_op_code:back2_SetMode                  - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120cd6 - unk38:0x 2120cd8 - unk3c:3 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+script ground sub call   5
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cd6 - *current_op_code:back_SetGround                 - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120cde - unk38:0x 2120ce0 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+GroundMap Select 300
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cd6 - *current_op_code:supervision_Acting             - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120ce2 - unk38:0x 2120ce4 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+script locate set   3   0
+GroundObject Add id   0  kind 353[353]  type 36833640  hanger 34667920  sector   3
+GroundObject Add id   1  kind 354[354]  type 36833652  hanger 34668456  sector   3
+GroundObject Add id   2  kind 564[564]  type 36836172  hanger 34668992  sector   3
+GroundPerformer Add id   0  kind   0  type 36836232  hanger 34659408  sector   0
+GroundLives ScriptExecute hanger   3  sector   0  type ACTING
+GroundObject ScriptExecute hanger   3  sector   0  type ACTING
+    [  0]  kind 353
+    [  1]  kind 354
+    [  2]  kind 564
+GroundPerformer ScriptExecute hanger   3  sector   0  type ACTING
+    [  0]  kind   0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cd6 - *current_op_code:object                         - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120ce6 - unk38:0x 2120ce8 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cd6 - *current_op_code:object                         - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120cea - unk38:0x 2120cec - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:4 - *script_target_id:0 - script_target_type:4 - unkC:3 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cee - *current_op_code:SetOutputAttribute             - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x       0 - unk38:0x       0 - unk3c:0 - unk40:0x       0 - unk42:0x       0 - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:4 - *script_target_id:0 - script_target_type:4 - unkC:1 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120d70 - *current_op_code:SetOutputAttribute             - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x       0 - unk38:0x       0 - unk3c:0 - unk40:0x       0 - unk42:0x       0 - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:4 - *script_target_id:0 - script_target_type:4 - unkC:1 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120d70 - *current_op_code:SetAnimation                   - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d70 - unk38:0x 2120d72 - unk3c:1 - unk40:0x       0 - unk42:0x       0 - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:4 - *script_target_id:0 - script_target_type:4 - unkC:1 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120d70 - *current_op_code:Wait                           - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d74 - unk38:0x 2120d76 - unk3c:1 - unk40:0x       9 - unk42:0x       0 - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:4 - *script_target_id:0 - script_target_type:4 - unkC:1 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120d82 - *current_op_code:SetOutputAttribute             - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x       0 - unk38:0x       0 - unk3c:0 - unk40:0x       0 - unk42:0x       0 - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:4 - *script_target_id:0 - script_target_type:4 - unkC:1 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120d82 - *current_op_code:SetOutputAttribute             - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d82 - unk38:0x 2120d84 - unk3c:1 - unk40:0x       0 - unk42:0x       0 - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:4 - *script_target_id:0 - script_target_type:4 - unkC:1 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120d82 - *current_op_code:SetAnimation                   - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d86 - unk38:0x 2120d88 - unk3c:1 - unk40:0x       0 - unk42:0x       0 - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:4 - *script_target_id:0 - script_target_type:4 - unkC:1 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120d82 - *current_op_code:Wait                           - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d8a - unk38:0x 2120d8c - unk3c:1 - unk40:0x       9 - unk42:0x       0 - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+GroundSubMapPenetrate Select 300
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cd6 - *current_op_code:performer                      - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120cf2 - unk38:0x 2120cf4 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cd6 - *current_op_code:performer                      - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120cfa - unk38:0x 2120cfc - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:4 - *script_target_id:0 - script_target_type:4 - unkC:3 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cf6 - *current_op_code:SetOutputAttribute             - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x       0 - unk38:0x 2120cf0 - unk3c:1 - unk40:0x       0 - unk42:0x       0 - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:5 - *script_target_id:0 - script_target_type:5 - unkC:3 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cfe - *current_op_code:camera_SetMyself               - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x       0 - unk38:0x 2120d62 - unk3c:4 - unk40:0x       0 - unk42:0x       0 - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cd6 - *current_op_code:bgm_PlayFadeIn                 - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d00 - unk38:0x 2120d02 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+bgm play   1 256 256
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cd6 - *current_op_code:screen2_FadeIn                 - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d0a - unk38:0x 2120d0c - unk3c:3 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cd6 - *current_op_code:screen_FadeIn                  - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d12 - unk38:0x 2120d14 - unk3c:2 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:5 - *script_target_id:0 - script_target_type:5 - unkC:3 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120d04 - *current_op_code:SetPosition                    - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x       0 - unk38:0x 2120d00 - unk3c:0 - unk40:0x       0 - unk42:0x       0 - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cd6 - *current_op_code:Wait                           - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d18 - unk38:0x 2120d1a - unk3c:2 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cd6 - *current_op_code:screen2_WhiteOut               - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d1e - unk38:0x 2120d20 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cd6 - *current_op_code:Wait                           - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d22 - unk38:0x 2120d24 - unk3c:2 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cd6 - *current_op_code:screen2_FadeIn                 - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d28 - unk38:0x 2120d2a - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cd6 - *current_op_code:Wait                           - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d2c - unk38:0x 2120d2e - unk3c:2 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cd6 - *current_op_code:performer                      - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d32 - unk38:0x 2120d34 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cd6 - *current_op_code:object                         - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d36 - unk38:0x 2120d38 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cd6 - *current_op_code:Wait                           - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d42 - unk38:0x 2120d44 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:4 - *script_target_id:0 - script_target_type:4 - unkC:3 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120d46 - *current_op_code:SetAnimation                   - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x       0 - unk38:0x 2120cf8 - unk3c:1 - unk40:0x       0 - unk42:0x       0 - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:5 - *script_target_id:0 - script_target_type:5 - unkC:3 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120d3a - *current_op_code:MovePosition                   - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x       0 - unk38:0x 2120d06 - unk3c:2 - unk40:0x       0 - unk42:0x       0 - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cd6 - *current_op_code:object                         - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d4a - unk38:0x 2120d4c - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120cd6 - *current_op_code:Wait                           - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d4e - unk38:0x 2120d50 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:4 - *script_target_id:0 - script_target_type:4 - unkC:3 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120d52 - *current_op_code:SetAnimation                   - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x       0 - unk38:0x 2120d48 - unk3c:1 - unk40:0x       0 - unk42:0x       0 - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+GroundSupervision ExecuteRequestCancel ==================
+GroundMain game cancel request  30
+bgm stop  30
+bgm2 stop  30
+se stop  num 998  time  30
+se stop 998  30
+se stop  num 16128  time  30
+se stop 16128  30
+GroundSupervision execute A 1
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:0 - unk12:0 - ssb_file_grp_addr:0x212fcc0 - ssb_file_opc_addr:0x2132bf0 - *current_op_code:Hold                           - ssb_file_str_table_addr:0x213b22c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x       0 - unk38:0x 2120d58 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:4 - *script_target_id:0 - script_target_type:4 - unkC:1 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120d70 - *current_op_code:SetAnimation                   - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d78 - unk38:0x 2120d7a - unk3c:1 - unk40:0x       9 - unk42:0x       0 - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:4 - *script_target_id:0 - script_target_type:4 - unkC:1 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120d70 - *current_op_code:End                            - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d7c - unk38:0x 2120d7e - unk3c:1 - unk40:0x      11 - unk42:0x       0 - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:4 - *script_target_id:0 - script_target_type:4 - unkC:1 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120d82 - *current_op_code:Wait                           - ssb_file_str_table_addr:0x2120da0 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d8e - unk38:0x 2120d90 - unk3c:1 - unk40:0x       9 - unk42:0x       0 - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+bgm end 1
+GroundObject Delete id   0
+GroundObject Delete id   1
+GroundObject Delete id   2
+GroundPerformer Delete id   0
+GET VAR VALUE: var:EVENT_LOCAL + offset 0: 0
+GET VAR VALUE: var:GROUND_START_MODE + offset 0: 0
+script load  file name [SCRIPT/COMMON/unionall.ssb]
+GET VAR VALUE: var:GROUND_ENTER + offset 0: 323
+GET VAR VALUE: var:GROUND_ENTER_LINK + offset 0: 0
+GroundSupervision ExecuteCommon request  81 0 ==================
+GroundSupervision execute A 2
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:0 - unk12:0 - ssb_file_grp_addr:0x212fcc0 - ssb_file_opc_addr:0x2132d02 - *current_op_code:message_Close                  - ssb_file_str_table_addr:0x213b22c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x       0 - unk38:0x 2132bf2 - unk3c:0 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:0 - unk12:0 - ssb_file_grp_addr:0x212fcc0 - ssb_file_opc_addr:0x2132d02 - *current_op_code:debug_Print                    - ssb_file_str_table_addr:0x213b22c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2132d02 - unk38:0x 2132d04 - unk3c:0 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       1 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+debug_Print: event
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:0 - unk12:0 - ssb_file_grp_addr:0x212fcc0 - ssb_file_opc_addr:0x2132d02 - *current_op_code:supervision_ExecuteActingSub   - ssb_file_str_table_addr:0x213b22c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2132d04 - unk38:0x 2132d06 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+ScriptStation prepare load common 351
+GroundSupervision execute A 6
+ScriptStation prepare load common 351
+ScriptStation load common 351
+ScriptStation_RemoveAll
+GroundLives Alternate hanger   3 sector  -2
+GroundObject Altemate hanger   3 sector  -2
+GroundPerformer Remove hanger   3 sector  -2
+station load hanger 3 file name [SCRIPT/V03P07A/t02a0502.ssa]
+script load  file name [SCRIPT/V03P07A/t02a0502.ssb]
+GroundSupervision execute B 6
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120ce8 - *current_op_code:back_SetGround                 - ssb_file_str_table_addr:0x2120e8e - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x       0 - unk38:0x 2132d0a - unk3c:3 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+GroundMap Select 351
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120ce8 - *current_op_code:supervision_Acting             - ssb_file_str_table_addr:0x2120e8e - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120ce8 - unk38:0x 2120cea - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+script locate set   3   0
+GroundObject Add id   0  kind 216[216]  type 36831996  hanger 34667920  sector   3
+GroundObject Add id   1  kind 212[212]  type 36831948  hanger 34668456  sector   3
+GroundPerformer Add id   0  kind   0  type 36836232  hanger 34659408  sector   0
+GroundLives ScriptExecute hanger   3  sector   0  type ACTING
+GroundObject ScriptExecute hanger   3  sector   0  type ACTING
+    [  0]  kind 216
+    [  1]  kind 212
+GroundPerformer ScriptExecute hanger   3  sector   0  type ACTING
+    [  0]  kind   0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120ce8 - *current_op_code:Switch                         - ssb_file_str_table_addr:0x2120e8e - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120cec - unk38:0x 2120cee - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+GET VAR VALUE: var:LANGUAGE_TYPE + offset 0: 0
+_ScriptCaseProcess 1
+    CASE   2
+    CASE   3
+    CASE   4
+    CASE   5
+    CASE OUT supervision_Acting[012a]
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120ce8 - *current_op_code:supervision_Acting             - ssb_file_str_table_addr:0x2120e8e - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120cf0 - unk38:0x 2120cf2 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+script locate set   3   1
+GroundObject Add id   2  kind 165[165]  type 36831384  hanger 34668992  sector   3
+GroundObject Add id   3  kind 170[170]  type 36831444  hanger 34669528  sector   3
+GroundLives ScriptExecute hanger   3  sector   1  type ACTING
+GroundObject ScriptExecute hanger   3  sector   1  type ACTING
+    [  2]  kind 165
+    [  3]  kind 170
+GroundPerformer ScriptExecute hanger   3  sector   1  type ACTING
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120ce8 - *current_op_code:Jump                           - ssb_file_str_table_addr:0x2120e8e - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d0c - unk38:0x 2120d0e - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120ce8 - *current_op_code:object                         - ssb_file_str_table_addr:0x2120e8e - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d10 - unk38:0x 2120d12 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120ce8 - *current_op_code:object                         - ssb_file_str_table_addr:0x2120e8e - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d30 - unk38:0x 2120d32 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120ce8 - *current_op_code:performer                      - ssb_file_str_table_addr:0x2120e8e - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d38 - unk38:0x 2120d3a - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120ce8 - *current_op_code:back2_SetMode                  - ssb_file_str_table_addr:0x2120e8e - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d40 - unk38:0x 2120d42 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+script ground sub call   4
+MAIN - *unk0:4 - *script_target_id:0 - script_target_type:4 - unkC:3 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120d34 - *current_op_code:SetAnimation                   - ssb_file_str_table_addr:0x2120e8e - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x       0 - unk38:0x 2120d54 - unk3c:1 - unk40:0x       0 - unk42:0x       0 - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:4 - *script_target_id:0 - script_target_type:4 - unkC:3 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120d3c - *current_op_code:SetAnimation                   - ssb_file_str_table_addr:0x2120e8e - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x       0 - unk38:0x 2120d82 - unk3c:0 - unk40:0x       0 - unk42:0x       0 - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:4 - *script_target_id:0 - script_target_type:4 - unkC:1 - unkE:2 - unk10:3 - unk12:1 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120e5c - *current_op_code:SetOutputAttribute             - ssb_file_str_table_addr:0x2120e8e - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x       0 - unk38:0x 2120d94 - unk3c:1 - unk40:0x       0 - unk42:0x       0 - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:4 - *script_target_id:0 - script_target_type:4 - unkC:1 - unkE:2 - unk10:3 - unk12:1 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120e5c - *current_op_code:SetOutputAttribute             - ssb_file_str_table_addr:0x2120e8e - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120e5c - unk38:0x 2120e5e - unk3c:1 - unk40:0x       0 - unk42:0x       0 - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:4 - *script_target_id:0 - script_target_type:4 - unkC:1 - unkE:2 - unk10:3 - unk12:1 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120e5c - *current_op_code:End                            - ssb_file_str_table_addr:0x2120e8e - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120e60 - unk38:0x 2120e62 - unk3c:1 - unk40:0x       0 - unk42:0x       0 - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:5 - *script_target_id:0 - script_target_type:5 - unkC:3 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120d44 - *current_op_code:camera_SetMyself               - ssb_file_str_table_addr:0x2120e8e - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x       0 - unk38:0x 2120d42 - unk3c:0 - unk40:0x       0 - unk42:0x       0 - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120ce8 - *current_op_code:Switch                         - ssb_file_str_table_addr:0x2120e8e - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d46 - unk38:0x 2120d48 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+GET VAR VALUE: var:LANGUAGE_TYPE + offset 0: 0
+_ScriptCaseProcess 1
+    CASE   2
+    CASE   3
+    CASE   4
+    CASE   5
+    CASE OUT back2_SetGround[0017]
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120ce8 - *current_op_code:back2_SetGround                - ssb_file_str_table_addr:0x2120e8e - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d4a - unk38:0x 2120d4c - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+GroundSubMapIndependent Select 295
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120ce8 - *current_op_code:Jump                           - ssb_file_str_table_addr:0x2120e8e - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d66 - unk38:0x 2120d68 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120ce8 - *current_op_code:camera2_SetPositionMark        - ssb_file_str_table_addr:0x2120e8e - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d6a - unk38:0x 2120d6c - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120ce8 - *current_op_code:BranchVariation                - ssb_file_str_table_addr:0x2120e8e - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d8a - unk38:0x 2120d8c - unk3c:4 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120ce8 - *current_op_code:back2_SetBackEffect            - ssb_file_str_table_addr:0x2120e8e - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d94 - unk38:0x 2120d96 - unk3c:2 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120ce8 - *current_op_code:screen2_FadeIn                 - ssb_file_str_table_addr:0x2120e8e - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d9a - unk38:0x 2120d9c - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120ce8 - *current_op_code:screen_FadeIn                  - ssb_file_str_table_addr:0x2120e8e - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120d9e - unk38:0x 2120da0 - unk3c:2 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120ce8 - *current_op_code:Switch                         - ssb_file_str_table_addr:0x2120e8e - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120da4 - unk38:0x 2120da6 - unk3c:2 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+GET VAR VALUE: var:LANGUAGE_TYPE + offset 0: 0
+_ScriptCaseProcess 1
+    CASE   2
+    CASE   3
+    CASE   4
+    CASE   5
+    CASE OUT     object[00c9]
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120ce8 - *current_op_code:object                         - ssb_file_str_table_addr:0x2120e8e - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120daa - unk38:0x 2120dac - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120ce8 - *current_op_code:Jump                           - ssb_file_str_table_addr:0x2120e8e - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120dc6 - unk38:0x 2120dc8 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120ce8 - *current_op_code:Wait                           - ssb_file_str_table_addr:0x2120e8e - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2120dce - unk38:0x 2120dd0 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:4 - *script_target_id:0 - script_target_type:4 - unkC:3 - unkE:2 - unk10:3 - unk12:0 - ssb_file_grp_addr:0x2120cc0 - ssb_file_opc_addr:0x2120dca - *current_op_code:SetAnimation                   - ssb_file_str_table_addr:0x2120e8e - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x       0 - unk38:0x       0 - unk3c:0 - unk40:0x       0 - unk42:0x       0 - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+GroundSupervision ExecuteRequestCancel ==================
+GroundMain game cancel request  30
+bgm stop  30
+bgm2 stop  30
+se stop  num 998  time  30
+se stop 998  30
+se stop  num 16128  time  30
+se stop 16128  30
+GroundSupervision execute A 1
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:0 - unk12:0 - ssb_file_grp_addr:0x212fcc0 - ssb_file_opc_addr:0x2132bf0 - *current_op_code:Hold                           - ssb_file_str_table_addr:0x213b22c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x       0 - unk38:0x 2120e00 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+GroundObject Delete id   0
+GroundObject Delete id   1
+GroundObject Delete id   2
+GroundObject Delete id   3
+GroundPerformer Delete id   0
+GET VAR VALUE: var:SCENARIO_SELECT + offset 0: 0
+GET VAR VALUE: var:SCENARIO_SELECT + offset 1: 0
+SCENARIO CALC [  2]    0    0 ->    0    0
+GET VAR VALUE: var:SCENARIO_MAIN + offset 0: 0
+GET VAR VALUE: var:SCENARIO_MAIN + offset 1: 0
+SCENARIO CALC [  3]    0    0 ->    0    0
+GET VAR VALUE: var:SCENARIO_SIDE + offset 0: 0
+GET VAR VALUE: var:SCENARIO_SIDE + offset 1: 0
+SCENARIO CALC [  4]    0    0 ->    0    0
+GET VAR VALUE: var:SCENARIO_SUB1 + offset 0: 0
+GET VAR VALUE: var:SCENARIO_SUB1 + offset 1: 0
+SCENARIO CALC [  5]    0    0 ->    0    0
+GET VAR VALUE: var:SCENARIO_SUB2 + offset 0: 0
+GET VAR VALUE: var:SCENARIO_SUB2 + offset 1: 0
+SCENARIO CALC [  6]    0    0 ->    0    0
+GET VAR VALUE: var:SCENARIO_SUB3 + offset 0: 0
+GET VAR VALUE: var:SCENARIO_SUB3 + offset 1: 0
+SCENARIO CALC [  7]    0    0 ->    0    0
+GET VAR VALUE: var:SCENARIO_SUB4 + offset 0: 0
+GET VAR VALUE: var:SCENARIO_SUB4 + offset 1: 0
+SCENARIO CALC [  8]    0    0 ->    0    0
+GET VAR VALUE: var:SCENARIO_SUB5 + offset 0: 0
+GET VAR VALUE: var:SCENARIO_SUB5 + offset 1: 0
+SCENARIO CALC [  9]    0    0 ->    0    0
+GET VAR VALUE: var:SCENARIO_SUB6 + offset 0: 0
+GET VAR VALUE: var:SCENARIO_SUB6 + offset 1: 0
+SCENARIO CALC [ 10]    0    0 ->    0    0
+GET VAR VALUE: var:SCENARIO_SUB7 + offset 0: 0
+GET VAR VALUE: var:SCENARIO_SUB7 + offset 1: 0
+SCENARIO CALC [ 11]    0    0 ->    0    0
+GET VAR VALUE: var:SCENARIO_SUB8 + offset 0: 0
+GET VAR VALUE: var:SCENARIO_SUB8 + offset 1: 0
+SCENARIO CALC [ 12]    0    0 ->    0    0
+bgm play   2 256 256
+GET VAR VALUE: var:SPECIAL_EPISODE_OPEN + offset 0: 0
+GET VAR VALUE: var:SPECIAL_EPISODE_OPEN + offset 1: 0
+GET VAR VALUE: var:SPECIAL_EPISODE_OPEN + offset 2: 0
+GET VAR VALUE: var:SPECIAL_EPISODE_OPEN + offset 3: 0
+GET VAR VALUE: var:SPECIAL_EPISODE_OPEN + offset 4: 0
+GET VAR VALUE: var:SPECIAL_EPISODE_TYPE + offset 0: -1
+GET VAR VALUE: var:GROUND_START_MODE_BACKUP + offset 0: 5
+GET VAR VALUE: var:GROUND_START_MODE_BACKUP + offset 1: 0
+GET VAR VALUE: var:GROUND_START_MODE_BACKUP + offset 2: 0
+GET VAR VALUE: var:PERFORMANCE_PROGRESS_LIST + offset 4: 0
+GET VAR VALUE: var:PERFORMANCE_PROGRESS_LIST + offset 4: 0
+GET VAR VALUE: var:PERFORMANCE_PROGRESS_LIST + offset 3: 0
+GET VAR VALUE: var:PERFORMANCE_PROGRESS_LIST + offset 4: 0
+GET VAR VALUE: var:PERFORMANCE_PROGRESS_LIST + offset 8: 0
+GET VAR VALUE: var:PERFORMANCE_PROGRESS_LIST + offset 26: 0
+GET VAR VALUE: var:PERFORMANCE_PROGRESS_LIST + offset 1: 0
+se play  num 16130  volume 256
+se play 16130 256
+GET VAR VALUE: var:GROUND_START_MODE_BACKUP + offset 0: 5
+GET VAR VALUE: var:GROUND_START_MODE_BACKUP + offset 1: 0
+GET VAR VALUE: var:GROUND_START_MODE_BACKUP + offset 2: 0
+GET VAR VALUE: var:GROUND_START_MODE_BACKUP + offset 0: 5
+GET VAR VALUE: var:EXECUTE_SPECIAL_EPISODE_TYPE + offset 0: 0
+GET VAR VALUE: var:PERFORMANCE_PROGRESS_LIST + offset 1: 0
+GET VAR VALUE: var:GROUND_PLACE_BACKUP + offset 0: 290
+GET VAR VALUE: var:PERFORMANCE_PROGRESS_LIST + offset 12: 0
+GET VAR VALUE: var:PERFORMANCE_PROGRESS_LIST + offset 13: 0
+GET VAR VALUE: var:PERFORMANCE_PROGRESS_LIST + offset 14: 0
+GET VAR VALUE: var:PERFORMANCE_PROGRESS_LIST + offset 15: 0
+GET VAR VALUE: var:PERFORMANCE_PROGRESS_LIST + offset 16: 0
+GET VAR VALUE: var:PERFORMANCE_PROGRESS_LIST + offset 17: 0
+GET VAR VALUE: var:PERFORMANCE_PROGRESS_LIST + offset 20: 0
+GET VAR VALUE: var:PERFORMANCE_PROGRESS_LIST + offset 26: 0
+GET VAR VALUE: var:PERFORMANCE_PROGRESS_LIST + offset 22: 0
+GET VAR VALUE: var:PERFORMANCE_PROGRESS_LIST + offset 24: 0
+GET VAR VALUE: var:PERFORMANCE_PROGRESS_LIST + offset 19: 0
+GET VAR VALUE: var:PERFORMANCE_PROGRESS_LIST + offset 18: 0
+GET VAR VALUE: var:PERFORMANCE_PROGRESS_LIST + offset 21: 0
+se play  num 16130  volume 256
+se play 16130 256
+GET VAR VALUE: var:PERFORMANCE_PROGRESS_LIST + offset 22: 0
+bgm stop  30
+bgm2 stop  30
+se stop  num 998  time  30
+se stop 998  30
+se stop  num 16128  time  30
+se stop 16128  30
+bgm end 2
+GET VAR VALUE: var:SPECIAL_EPISODE_TYPE + offset 0: -1
+GET VAR VALUE: var:GROUND_ENTER_BACKUP + offset 0: 224
+GET VAR VALUE: var:GROUND_ENTER_LINK_BACKUP + offset 0: 0
+GET VAR VALUE: var:GROUND_GETOUT_BACKUP + offset 0: 224
+GET VAR VALUE: var:GROUND_MAP_BACKUP + offset 0: 224
+GET VAR VALUE: var:GROUND_PLACE_BACKUP + offset 0: 290
+GET VAR VALUE: var:DUNGEON_ENTER_BACKUP + offset 0: -1
+GET VAR VALUE: var:DUNGEON_ENTER_MODE_BACKUP + offset 0: 0
+GET VAR VALUE: var:DUNGEON_ENTER_INDEX_BACKUP + offset 0: 3
+GET VAR VALUE: var:DUNGEON_ENTER_FREQUENCY_BACKUP + offset 0: 3
+GET VAR VALUE: var:DUNGEON_RESULT_BACKUP + offset 0: 0
+GET VAR VALUE: var:GROUND_START_MODE_BACKUP + offset 0: 5
+GET VAR VALUE: var:PLAYER_KIND_BACKUP + offset 0: 0
+GET VAR VALUE: var:ATTENDANT1_KIND_BACKUP + offset 0: 2
+GET VAR VALUE: var:ATTENDANT2_KIND_BACKUP + offset 0: 0
+GET VAR VALUE: var:SCENARIO_SELECT_BACKUP + offset 0: 0
+GET VAR VALUE: var:SCENARIO_SELECT_BACKUP + offset 4: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 0: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 1: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 2: 1
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 3: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 4: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 5: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 6: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 7: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 8: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 9: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 10: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 11: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 12: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 13: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 14: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 15: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 16: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 17: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 18: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 19: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 20: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 21: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 22: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 23: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 24: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 25: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 26: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 27: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 28: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 29: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 30: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 31: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 32: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 33: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 34: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 35: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 36: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 37: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 38: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 39: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 40: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 41: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 42: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 43: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 44: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 45: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 46: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 47: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 48: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 49: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 50: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 51: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 52: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 53: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 54: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 55: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 56: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 57: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 58: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 59: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 60: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 61: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 62: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 63: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 64: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 65: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 66: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 67: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 68: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 69: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 70: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 71: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 72: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 73: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 74: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 75: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 76: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 77: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 78: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 79: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 80: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 81: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 82: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 83: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 84: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 85: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 86: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 87: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 88: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 89: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 90: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 91: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 92: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 93: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 94: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 95: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 96: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 97: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 98: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 99: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 100: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 101: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 102: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 103: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 104: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 105: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 106: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 107: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 108: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 109: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 110: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 111: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 112: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 113: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 114: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 115: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 116: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 117: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 118: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 119: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 120: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 121: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 122: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 123: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 124: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 125: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 126: 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG_BACKUP + offset 127: 0
+GET VAR VALUE: var:HERO_TALK_KIND + offset 0: 4
+GET VAR VALUE: var:GROUND_START_MODE + offset 0: 5
+bgm stop  16
+bgm2 stop  16
+se stop  num 998  time  16
+se stop 998  16
+se stop  num 16128  time  16
+se stop 16128  16
+GET VAR VALUE: var:GROUND_START_MODE + offset 0: 5
+script load  file name [SCRIPT/COMMON/unionall.ssb]
+GET VAR VALUE: var:GROUND_ENTER + offset 0: 224
+GET VAR VALUE: var:GROUND_ENTER_LINK + offset 0: 0
+GET VAR VALUE: var:GROUND_ENTER + offset 0: 224
+GroundSupervision ExecuteCommon request  60 0 ==================
+GroundSupervision execute A 2
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:0 - unk12:0 - ssb_file_grp_addr:0x212fcc0 - ssb_file_opc_addr:0x21315b0 - *current_op_code:debug_Print                    - ssb_file_str_table_addr:0x213b22c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x       0 - unk38:0x 2132bf2 - unk3c:0 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+debug_Print: EVENT_DIVIDE
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:0 - unk12:0 - ssb_file_grp_addr:0x212fcc0 - ssb_file_opc_addr:0x21315b0 - *current_op_code:BranchVariation                - ssb_file_str_table_addr:0x213b22c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 21315b0 - unk38:0x 21315b2 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:0 - unk12:0 - ssb_file_grp_addr:0x212fcc0 - ssb_file_opc_addr:0x21315b0 - *current_op_code:SwitchScenario                 - ssb_file_str_table_addr:0x213b22c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 21315b4 - unk38:0x 21315b6 - unk3c:2 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+GET VAR VALUE: var:SCENARIO_SELECT + offset 0: 0
+_ScriptCaseProcess 0
+    CASE_VALUE   2  51
+    CASE_VALUE   2  52
+    CASE_VALUE   2  53
+    CASE_VALUE   2  54
+    CASE OUT  BranchBit[0029]
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:0 - unk12:0 - ssb_file_grp_addr:0x212fcc0 - ssb_file_opc_addr:0x21315b0 - *current_op_code:BranchBit                      - ssb_file_str_table_addr:0x213b22c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 21315ba - unk38:0x 21315bc - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG + offset 6: 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:0 - unk12:0 - ssb_file_grp_addr:0x212fcc0 - ssb_file_opc_addr:0x21315b0 - *current_op_code:debug_Print                    - ssb_file_str_table_addr:0x213b22c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 21315de - unk38:0x 21315e0 - unk3c:3 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+debug_Print: LABEL_DIVIDE_RESUME
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:0 - unk12:0 - ssb_file_grp_addr:0x212fcc0 - ssb_file_opc_addr:0x21315b0 - *current_op_code:flag_CalcBit                   - ssb_file_str_table_addr:0x213b22c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2131654 - unk38:0x 2131656 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:0 - unk12:0 - ssb_file_grp_addr:0x212fcc0 - ssb_file_opc_addr:0x21315b0 - *current_op_code:JumpCommon                     - ssb_file_str_table_addr:0x213b22c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2131658 - unk38:0x 213165a - unk3c:3 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+script call or jump commmon  68
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:0 - unk12:0 - ssb_file_grp_addr:0x212fcc0 - ssb_file_opc_addr:0x21315b0 - *current_op_code:BranchBit                      - ssb_file_str_table_addr:0x213b22c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2131660 - unk38:0x 2131662 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG + offset 7: 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:0 - unk12:0 - ssb_file_grp_addr:0x212fcc0 - ssb_file_opc_addr:0x21315b0 - *current_op_code:debug_Print                    - ssb_file_str_table_addr:0x213b22c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 21321b0 - unk38:0x 21321b2 - unk3c:3 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+debug_Print: HANYOU_RESUME
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:0 - unk12:0 - ssb_file_grp_addr:0x212fcc0 - ssb_file_opc_addr:0x21315b0 - *current_op_code:Switch                         - ssb_file_str_table_addr:0x213b22c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 213232e - unk38:0x 2132330 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+GET VAR VALUE: var:GROUND_ENTER + offset 0: 224
+_ScriptCaseProcess 224
+    CASE 211
+    CASE 216
+    CASE 214
+    CASE 222
+    CASE  23
+    CASE  24
+    CASE  25
+    CASE  26
+    CASE  45
+    CASE  46
+    CASE  47
+    CASE  50
+    CASE  51
+    CASE  52
+    CASE  55
+    CASE  59
+    CASE  67
+    CASE  74
+    CASE  97
+    CASE 176
+    CASE  38
+    CASE  27
+    CASE  30
+    CASE  35
+    CASE  48
+    CASE  56
+    CASE  60
+    CASE  68
+    CASE  90
+    CASE  98
+    CASE 102
+    CASE 177
+    CASE 104
+    CASE 105
+    CASE 113
+    CASE 114
+    CASE 117
+    CASE 118
+    CASE 119
+    CASE  50
+    CASE 121
+    CASE 122
+    CASE 123
+    CASE 125
+    CASE 129
+    CASE 131
+    CASE 156
+    CASE 157
+    CASE 158
+    CASE 159
+    CASE 160
+    CASE 161
+    CASE 162
+    CASE 163
+    CASE 164
+    CASE 165
+    CASE 251
+    CASE 254
+    CASE 110
+    CASE 135
+    CASE 138
+    CASE 139
+    CASE 141
+    CASE 143
+    CASE 145
+    CASE 224
+    CASE JUMP  65 5521
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:0 - unk12:0 - ssb_file_grp_addr:0x212fcc0 - ssb_file_opc_addr:0x21315b0 - *current_op_code:debug_Print                    - ssb_file_str_table_addr:0x213b22c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2132332 - unk38:0x 2132334 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+debug_Print: LABEL_CROSS
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:0 - unk12:0 - ssb_file_grp_addr:0x212fcc0 - ssb_file_opc_addr:0x21315b0 - *current_op_code:main_EnterGround               - ssb_file_str_table_addr:0x213b22c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 21327e2 - unk38:0x 21327e4 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+GroundMain ground request 224  30
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:0 - unk12:0 - ssb_file_grp_addr:0x212fcc0 - ssb_file_opc_addr:0x21315b0 - *current_op_code:End                            - ssb_file_str_table_addr:0x213b22c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 21327e6 - unk38:0x 21327e8 - unk3c:2 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+GET VAR VALUE: var:GROUND_ENTER + offset 0: 224
+GroundSupervision ExecuteCommon request  60 0 ==================
+GroundSupervision execute A 2
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:0 - unk12:0 - ssb_file_grp_addr:0x212fcc0 - ssb_file_opc_addr:0x21315b0 - *current_op_code:debug_Print                    - ssb_file_str_table_addr:0x213b22c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x       0 - unk38:0x 21327ee - unk3c:0 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+debug_Print: EVENT_DIVIDE
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:0 - unk12:0 - ssb_file_grp_addr:0x212fcc0 - ssb_file_opc_addr:0x21315b0 - *current_op_code:BranchVariation                - ssb_file_str_table_addr:0x213b22c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 21315b0 - unk38:0x 21315b2 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:0 - unk12:0 - ssb_file_grp_addr:0x212fcc0 - ssb_file_opc_addr:0x21315b0 - *current_op_code:SwitchScenario                 - ssb_file_str_table_addr:0x213b22c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 21315b4 - unk38:0x 21315b6 - unk3c:2 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+GET VAR VALUE: var:SCENARIO_SELECT + offset 0: 0
+_ScriptCaseProcess 0
+    CASE_VALUE   2  51
+    CASE_VALUE   2  52
+    CASE_VALUE   2  53
+    CASE_VALUE   2  54
+    CASE OUT  BranchBit[0029]
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:0 - unk12:0 - ssb_file_grp_addr:0x212fcc0 - ssb_file_opc_addr:0x21315b0 - *current_op_code:BranchBit                      - ssb_file_str_table_addr:0x213b22c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 21315ba - unk38:0x 21315bc - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG + offset 6: 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:0 - unk12:0 - ssb_file_grp_addr:0x212fcc0 - ssb_file_opc_addr:0x21315b0 - *current_op_code:BranchBit                      - ssb_file_str_table_addr:0x213b22c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 21315de - unk38:0x 21315e0 - unk3c:3 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG + offset 7: 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:0 - unk12:0 - ssb_file_grp_addr:0x212fcc0 - ssb_file_opc_addr:0x21315b0 - *current_op_code:debug_Print                    - ssb_file_str_table_addr:0x213b22c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 21315e6 - unk38:0x 21315e8 - unk3c:3 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+debug_Print: LABEL_HANYOU_RESUME
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:0 - unk12:0 - ssb_file_grp_addr:0x212fcc0 - ssb_file_opc_addr:0x21315b0 - *current_op_code:Jump                           - ssb_file_str_table_addr:0x213b22c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2131664 - unk38:0x 2131666 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:0 - unk12:0 - ssb_file_grp_addr:0x212fcc0 - ssb_file_opc_addr:0x21315b0 - *current_op_code:supervision_ExecuteEnter       - ssb_file_str_table_addr:0x213b22c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2131668 - unk38:0x 213166a - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+GET VAR VALUE: var:GROUND_ENTER + offset 0: 224
+ScriptStation prepare load common 224
+GroundSupervision ExecuteEnter 224 ====
+GroundSupervision execute A 3
+ScriptStation prepare load common 224
+ScriptStation load common 224
+ScriptStation_RemoveAll
+station load hanger 1 file name [SCRIPT/P01P01A/enter.sse]
+script load  file name [SCRIPT/P01P01A/enter00.ssb]
+GroundSupervision execute B 3
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:1 - unk12:0 - ssb_file_grp_addr:0x212acc0 - ssb_file_opc_addr:0x212ace8 - *current_op_code:SwitchSector                   - ssb_file_str_table_addr:0x212b1a4 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x       0 - unk38:0x 2131758 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+_ScriptCaseProcess 0
+    CASE   1
+    CASE OUT screen_FadeOutAll[00dc]
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:1 - unk12:0 - ssb_file_grp_addr:0x212acc0 - ssb_file_opc_addr:0x212ace8 - *current_op_code:screen_FadeOutAll              - ssb_file_str_table_addr:0x212b1a4 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 212ace8 - unk38:0x 212acea - unk3c:0 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:1 - unk12:0 - ssb_file_grp_addr:0x212acc0 - ssb_file_opc_addr:0x212ace8 - *current_op_code:Switch                         - ssb_file_str_table_addr:0x212b1a4 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 212acf0 - unk38:0x 212acf2 - unk3c:2 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+GET VAR VALUE: var:EXECUTE_SPECIAL_EPISODE_TYPE + offset 0: 0
+_ScriptCaseProcess -1
+    CASE   0
+    CASE   2
+    CASE OUT BranchScenarioNowAfter[002f]
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:1 - unk12:0 - ssb_file_grp_addr:0x212acc0 - ssb_file_opc_addr:0x212ace8 - *current_op_code:BranchScenarioNowAfter         - ssb_file_str_table_addr:0x212b1a4 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 212acf6 - unk38:0x 212acf8 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+GET VAR VALUE: var:SCENARIO_MAIN + offset 0: 4
+GET VAR VALUE: var:SCENARIO_MAIN + offset 1: 3
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:1 - unk12:0 - ssb_file_grp_addr:0x212acc0 - ssb_file_opc_addr:0x212ace8 - *current_op_code:back_SetGround                 - ssb_file_str_table_addr:0x212b1a4 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 212ad06 - unk38:0x 212ad08 - unk3c:4 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+GroundMap Select 224
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:1 - unk12:0 - ssb_file_grp_addr:0x212acc0 - ssb_file_opc_addr:0x212ace8 - *current_op_code:Jump                           - ssb_file_str_table_addr:0x212b1a4 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 212ad10 - unk38:0x 212ad12 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:1 - unk12:0 - ssb_file_grp_addr:0x212acc0 - ssb_file_opc_addr:0x212ace8 - *current_op_code:supervision_StationCommon      - ssb_file_str_table_addr:0x212b1a4 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 212ad14 - unk38:0x 212ad16 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+script locate set   1   0
+GroundObject Add id   0  kind   6[  6]  type 36829476  hanger 34667920  sector   1
+GroundEvent Add id   0  kind 659  hanger 34691520  sector  -1
+GroundEvent Add id   1  kind 659  hanger 34691552  sector  -1
+GroundEvent Add id   2  kind 659  hanger 34691584  sector  -1
+GroundEvent Add id   3  kind 659  hanger 34691616  sector  -1
+GroundLives ScriptExecute hanger   1  sector   0  type STATION
+GroundObject ScriptExecute hanger   1  sector   0  type STATION
+    [  0]  kind   6
+GroundPerformer ScriptExecute hanger   1  sector   0  type STATION
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:1 - unk12:0 - ssb_file_grp_addr:0x212acc0 - ssb_file_opc_addr:0x212ace8 - *current_op_code:supervision_StationCommon      - ssb_file_str_table_addr:0x212b1a4 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 212ad20 - unk38:0x 212ad22 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+script locate set   1  11
+GroundObject Add id   1  kind   6[  6]  type 36829476  hanger 34668456  sector   1
+GroundLives ScriptExecute hanger   1  sector  11  type STATION
+GroundObject ScriptExecute hanger   1  sector  11  type STATION
+    [  1]  kind   6
+GroundPerformer ScriptExecute hanger   1  sector  11  type STATION
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:1 - unk12:0 - ssb_file_grp_addr:0x212acc0 - ssb_file_opc_addr:0x212ace8 - *current_op_code:Switch                         - ssb_file_str_table_addr:0x212b1a4 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 212ad24 - unk38:0x 212ad26 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+GET VAR VALUE: var:EXECUTE_SPECIAL_EPISODE_TYPE + offset 0: 0
+_ScriptCaseProcess -1
+    CASE   0
+    CASE   2
+    CASE OUT       Jump[0087]
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:1 - unk12:0 - ssb_file_grp_addr:0x212acc0 - ssb_file_opc_addr:0x212ace8 - *current_op_code:Jump                           - ssb_file_str_table_addr:0x212b1a4 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 212ad28 - unk38:0x 212ad2a - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:1 - unk12:0 - ssb_file_grp_addr:0x212acc0 - ssb_file_opc_addr:0x212ace8 - *current_op_code:BranchScenarioNowAfter         - ssb_file_str_table_addr:0x212b1a4 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 212ad38 - unk38:0x 212ad3a - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+GET VAR VALUE: var:SCENARIO_MAIN + offset 0: 4
+GET VAR VALUE: var:SCENARIO_MAIN + offset 1: 3
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:1 - unk12:0 - ssb_file_grp_addr:0x212acc0 - ssb_file_opc_addr:0x212ace8 - *current_op_code:supervision_StationCommon      - ssb_file_str_table_addr:0x212b1a4 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 212ad5c - unk38:0x 212ad5e - unk3c:4 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+script locate set   1   6
+GroundLives ScriptExecute hanger   1  sector   6  type STATION
+GroundObject ScriptExecute hanger   1  sector   6  type STATION
+GroundPerformer ScriptExecute hanger   1  sector   6  type STATION
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:1 - unk12:0 - ssb_file_grp_addr:0x212acc0 - ssb_file_opc_addr:0x212ace8 - *current_op_code:BranchScenarioBefore           - ssb_file_str_table_addr:0x212b1a4 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 212ad66 - unk38:0x 212ad68 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+GET VAR VALUE: var:SCENARIO_MAIN + offset 0: 4
+GET VAR VALUE: var:SCENARIO_MAIN + offset 1: 3
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:1 - unk12:0 - ssb_file_grp_addr:0x212acc0 - ssb_file_opc_addr:0x212ace8 - *current_op_code:BranchScenarioBefore           - ssb_file_str_table_addr:0x212b1a4 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 212ad6a - unk38:0x 212ad6c - unk3c:4 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+GET VAR VALUE: var:SCENARIO_MAIN + offset 0: 4
+GET VAR VALUE: var:SCENARIO_MAIN + offset 1: 3
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:1 - unk12:0 - ssb_file_grp_addr:0x212acc0 - ssb_file_opc_addr:0x212ace8 - *current_op_code:SwitchScenario                 - ssb_file_str_table_addr:0x212b1a4 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 212ad78 - unk38:0x 212ad7a - unk3c:4 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+GET VAR VALUE: var:SCENARIO_MAIN + offset 0: 4
+_ScriptCaseProcess 4
+    CASE_VALUE   2   4
+    CASE JUMP   0 195
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:1 - unk12:0 - ssb_file_grp_addr:0x212acc0 - ssb_file_opc_addr:0x212ace8 - *current_op_code:supervision_ExecuteStationSub  - ssb_file_str_table_addr:0x212b1a4 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 212ad86 - unk38:0x 212ad88 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+ScriptStation prepare load common 224
+GroundLives Alternate hanger   2 sector  -2
+GroundObject Altemate hanger   2 sector  -2
+    [  0] kind   6  hanger  -2  sector  -1
+    [  1] kind   6  hanger  -2  sector  -1
+GroundPerformer Remove hanger   2 sector  -2
+GroundEvent Alternate hanger   2 sector  -2
+    [  0] kind 659  hanger  -2  sector  -1
+    [  1] kind 659  hanger  -2  sector  -1
+    [  2] kind 659  hanger  -2  sector  -1
+    [  3] kind 659  hanger  -2  sector  -1
+GroundSupervision execute A 5
+ScriptStation prepare load common 224
+GroundLives Alternate hanger   2 sector  -2
+GroundObject Altemate hanger   2 sector  -2
+    [  0] kind   6  hanger  -2  sector  -1
+    [  1] kind   6  hanger  -2  sector  -1
+GroundPerformer Remove hanger   2 sector  -2
+GroundEvent Alternate hanger   2 sector  -2
+    [  0] kind 659  hanger  -2  sector  -1
+    [  1] kind 659  hanger  -2  sector  -1
+    [  2] kind 659  hanger  -2  sector  -1
+    [  3] kind 659  hanger  -2  sector  -1
+GroundLives Alternate hanger   2 sector  -2
+GroundObject Altemate hanger   2 sector  -2
+    [  0] kind   6  hanger  -2  sector  -1
+    [  1] kind   6  hanger  -2  sector  -1
+GroundPerformer Remove hanger   2 sector  -2
+GroundEvent Alternate hanger   2 sector  -2
+    [  0] kind 659  hanger  -2  sector  -1
+    [  1] kind 659  hanger  -2  sector  -1
+    [  2] kind 659  hanger  -2  sector  -1
+    [  3] kind 659  hanger  -2  sector  -1
+station load hanger 2 file name [SCRIPT/P01P01A/um03.sss]
+script load  file name [SCRIPT/P01P01A/um0300.ssb]
+GroundSupervision execute B 5
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:2 - unk12:0 - ssb_file_grp_addr:0x2128cc0 - ssb_file_opc_addr:0x2128cd0 - *current_op_code:supervision_Station            - ssb_file_str_table_addr:0x2128d2c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x       0 - unk38:0x 212ae48 - unk3c:3 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+script locate set   2   0
+GroundLives ScriptExecute hanger   2  sector   0  type STATION
+GroundObject ScriptExecute hanger   2  sector   0  type STATION
+GroundPerformer ScriptExecute hanger   2  sector   0  type STATION
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:2 - unk12:0 - ssb_file_grp_addr:0x2128cc0 - ssb_file_opc_addr:0x2128cd0 - *current_op_code:BranchScenarioNowAfter         - ssb_file_str_table_addr:0x2128d2c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2128cd0 - unk38:0x 2128cd2 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+GET VAR VALUE: var:SCENARIO_MAIN + offset 0: 4
+GET VAR VALUE: var:SCENARIO_MAIN + offset 1: 3
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:2 - unk12:0 - ssb_file_grp_addr:0x2128cc0 - ssb_file_opc_addr:0x2128cd0 - *current_op_code:BranchScenarioNowAfter         - ssb_file_str_table_addr:0x2128d2c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2128cd4 - unk38:0x 2128cd6 - unk3c:4 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+GET VAR VALUE: var:SCENARIO_MAIN + offset 0: 4
+GET VAR VALUE: var:SCENARIO_MAIN + offset 1: 3
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:2 - unkE:2 - unk10:2 - unk12:0 - ssb_file_grp_addr:0x2128cc0 - ssb_file_opc_addr:0x2128cd0 - *current_op_code:End                            - ssb_file_str_table_addr:0x2128d2c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2128cde - unk38:0x 2128ce0 - unk3c:4 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:1 - unk12:0 - ssb_file_grp_addr:0x212acc0 - ssb_file_opc_addr:0x212ace8 - *current_op_code:Jump                           - ssb_file_str_table_addr:0x212b1a4 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 212ae46 - unk38:0x 212ae48 - unk3c:3 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:1 - unk12:0 - ssb_file_grp_addr:0x212acc0 - ssb_file_opc_addr:0x212ace8 - *current_op_code:BranchBit                      - ssb_file_str_table_addr:0x212b1a4 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 212ae4e - unk38:0x 212ae50 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+GET VAR VALUE: var:SCENARIO_MAIN_BIT_FLAG + offset 7: 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:1 - unk12:0 - ssb_file_grp_addr:0x212acc0 - ssb_file_opc_addr:0x212ace8 - *current_op_code:debug_Print                    - ssb_file_str_table_addr:0x212b1a4 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 212b014 - unk38:0x 212b016 - unk3c:3 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+debug_Print: RESUME
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:1 - unk12:0 - ssb_file_grp_addr:0x212acc0 - ssb_file_opc_addr:0x212ace8 - *current_op_code:flag_CalcBit                   - ssb_file_str_table_addr:0x212b1a4 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 212b020 - unk38:0x 212b022 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:1 - unk12:0 - ssb_file_grp_addr:0x212acc0 - ssb_file_opc_addr:0x212ace8 - *current_op_code:Switch                         - ssb_file_str_table_addr:0x212b1a4 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 212b024 - unk38:0x 212b026 - unk3c:3 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+GET VAR VALUE: var:EXECUTE_SPECIAL_EPISODE_TYPE + offset 0: 0
+_ScriptCaseProcess -1
+    CASE   0
+    CASE   2
+    CASE OUT supervision_StationCommon[013c]
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:1 - unk12:0 - ssb_file_grp_addr:0x212acc0 - ssb_file_opc_addr:0x212ace8 - *current_op_code:supervision_StationCommon      - ssb_file_str_table_addr:0x212b1a4 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 212b02c - unk38:0x 212b02e - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+script locate set   1  12
+GET VAR VALUE: var:PLAYER_KIND + offset 0: 0
+GroundLives Locate id   0  kind   1  index 34244764
+GroundLive Add id   0  kind   1  type 34244764  hanger 34795794  sector   0
+GroundLives Locate kind   1  px    71680  py 34244764
+GET VAR VALUE: var:ATTENDANT1_KIND + offset 0: 2
+GET VAR VALUE: var:ATTENDANT2_KIND + offset 0: 0
+GroundLives Locate id   1  kind  13  index 34244908
+GroundLive Add id   1  kind  13  type 34244908  hanger 34795794  sector   1
+GroundLives Locate kind  13  px    71680  py 34244908
+GET VAR VALUE: var:ATTENDANT1_KIND + offset 0: 2
+GET VAR VALUE: var:ATTENDANT2_KIND + offset 0: 0
+GroundLives ScriptExecute hanger   1  sector  12  type STATION
+    [  0]  kind   1
+GET VAR VALUE: var:PLAYER_KIND + offset 0: 0
+    [  1]  kind  13
+GET VAR VALUE: var:PLAYER_KIND + offset 0: 0
+GET VAR VALUE: var:ATTENDANT1_KIND + offset 0: 2
+GET VAR VALUE: var:ATTENDANT2_KIND + offset 0: 0
+GroundObject ScriptExecute hanger   1  sector  12  type STATION
+GroundPerformer ScriptExecute hanger   1  sector  12  type STATION
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:1 - unk12:0 - ssb_file_grp_addr:0x212acc0 - ssb_file_opc_addr:0x212ace8 - *current_op_code:Jump                           - ssb_file_str_table_addr:0x212b1a4 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 212b03c - unk38:0x 212b03e - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:1 - unk12:0 - ssb_file_grp_addr:0x212acc0 - ssb_file_opc_addr:0x212ace8 - *current_op_code:debug_Print                    - ssb_file_str_table_addr:0x212b1a4 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 212b040 - unk38:0x 212b042 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+debug_Print: SET_BGM
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:1 - unk12:0 - ssb_file_grp_addr:0x212acc0 - ssb_file_opc_addr:0x212ace8 - *current_op_code:bgm_PlayFadeIn                 - ssb_file_str_table_addr:0x212b1a4 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 212b15a - unk38:0x 212b15c - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+bgm play   9 256 256
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:1 - unk12:0 - ssb_file_grp_addr:0x212acc0 - ssb_file_opc_addr:0x212ace8 - *current_op_code:JumpCommon                     - ssb_file_str_table_addr:0x212b1a4 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 212b15e - unk38:0x 212b160 - unk3c:3 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+script call or jump commmon 657
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:1 - unk12:0 - ssb_file_grp_addr:0x212fcc0 - ssb_file_opc_addr:0x212ace8 - *current_op_code:debug_Print                    - ssb_file_str_table_addr:0x213b22c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 212b166 - unk38:0x 212b168 - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+debug_Print: COMMON_ENTER
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:1 - unk12:0 - ssb_file_grp_addr:0x212fcc0 - ssb_file_opc_addr:0x212ace8 - *current_op_code:screen_FadeInAll               - ssb_file_str_table_addr:0x213b22c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 213831c - unk38:0x 213831e - unk3c:1 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:1 - unk12:0 - ssb_file_grp_addr:0x212fcc0 - ssb_file_opc_addr:0x212ace8 - *current_op_code:screen_FadeIn                  - ssb_file_str_table_addr:0x213b22c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2138320 - unk38:0x 2138322 - unk3c:2 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:3 - *script_target_id:0 - script_target_type:3 - unkC:0 - unkE:2 - unk10:1 - unk12:12 - ssb_file_grp_addr:0x212acc0 - ssb_file_opc_addr:0x212b16c - *current_op_code:SetAnimation                   - ssb_file_str_table_addr:0x212b1a4 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x       0 - unk38:0x       0 - unk3c:0 - unk40:0x       0 - unk42:0x       0 - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:3 - *script_target_id:0 - script_target_type:3 - unkC:0 - unkE:2 - unk10:1 - unk12:12 - ssb_file_grp_addr:0x212acc0 - ssb_file_opc_addr:0x212b16c - *current_op_code:WaitFadeIn                     - ssb_file_str_table_addr:0x212b1a4 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 212b16c - unk38:0x 212b16e - unk3c:1 - unk40:0x       2 - unk42:0x       0 - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:3 - *script_target_id:1 - script_target_type:3 - unkC:0 - unkE:2 - unk10:1 - unk12:12 - ssb_file_grp_addr:0x212acc0 - ssb_file_opc_addr:0x212b174 - *current_op_code:SetAnimation                   - ssb_file_str_table_addr:0x212b1a4 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x       0 - unk38:0x       0 - unk3c:0 - unk40:0x       0 - unk42:0x       0 - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:3 - *script_target_id:1 - script_target_type:3 - unkC:0 - unkE:2 - unk10:1 - unk12:12 - ssb_file_grp_addr:0x212acc0 - ssb_file_opc_addr:0x212b174 - *current_op_code:WaitFadeIn                     - ssb_file_str_table_addr:0x212b1a4 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 212b174 - unk38:0x 212b176 - unk3c:1 - unk40:0x       2 - unk42:0x       0 - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:1 - *script_target_id:0 - script_target_type:1 - unkC:1 - unkE:2 - unk10:1 - unk12:0 - ssb_file_grp_addr:0x212fcc0 - ssb_file_opc_addr:0x212ace8 - *current_op_code:End                            - ssb_file_str_table_addr:0x213b22c - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 2138326 - unk38:0x 2138328 - unk3c:2 - unk40:0x       0 - unk42:0x      ff - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:3 - *script_target_id:0 - script_target_type:3 - unkC:0 - unkE:2 - unk10:1 - unk12:12 - ssb_file_grp_addr:0x212acc0 - ssb_file_opc_addr:0x212b16c - *current_op_code:End                            - ssb_file_str_table_addr:0x212b1a4 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 212b170 - unk38:0x 212b172 - unk3c:0 - unk40:0x       2 - unk42:0x       0 - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+MAIN - *unk0:3 - *script_target_id:1 - script_target_type:3 - unkC:0 - unkE:2 - unk10:1 - unk12:12 - ssb_file_grp_addr:0x212acc0 - ssb_file_opc_addr:0x212b174 - *current_op_code:End                            - ssb_file_str_table_addr:0x212b1a4 - unk24:0x       0 - unk28:0x       0 - unk2c:0x       0 - unk30:0x       0 - unk34:0x 212b178 - unk38:0x 212b17a - unk3c:0 - unk40:0x       2 - unk42:0x       0 - unk44:0x:       0 -unk48:0x       0 - unk4c:0x       0 - unk6c-unk6f:0x 0 0 0 0
+Traceback (most recent call last):
+  File "/home/marco/austausch/dev/skytemple/ssb_debugger/skytemple_ssb_debugger/sandbox.py", line 452, in <module>
+    win.draw()
+  File "/home/marco/austausch/dev/skytemple/py_desmume/desmume/emulator.py", line 73, in draw
+    self.lib.desmume_draw_window_frame()
+KeyboardInterrupt
+
+Process finished with exit code 130 (interrupted by signal 2: SIGINT)
+

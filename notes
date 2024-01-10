@@ -1,0 +1,102 @@
+find /b 0x1FFFFFF, 0x3FFFFFF, 0xf0, 0x47, 0x2d, 0xe9, 0x08, 0xd0, 0x4d, 0xe2, 0x7c, 0x02, 0x9f, 0xe5
+
+
+target remote 127.0.0.1:20000
+display/i $pc
+info registers
+watch $r1 == 0x0000ffaa
+
+
+https://darkdust.net/files/GDB%20Cheat%20Sheet.pdf
+
+
+0x2120d12
+0x2520d12
+0x2920d12
+0x2d20d12
+
+0x2120d12
+0x2520d12
+0x2920d12
+0x2d20d12
+
+# Read OpCode
+0x22decf8
+
+# hex
+x/x $pc
+# instruction
+x/i $pc
+
+
+
+     0x022ddb04
+RAM; 0x022decf8
+Start?
+
+Overlay 11:
+- ROM: 1660416       0x195600
+- RAM: 36555648      0x22DCB80
+- RAM size: 298560
+om 3 0x22DCB80 298560 0x195600 r-x fmap.arm9o11
+# FOR US: om 3 0x22DC240 298048 0x196600 r-x fmap.arm9o11 # TODO: SIZE MIGHT BE DIFFERENT FROM EU SIZE!  -- 196600 -- 1DF240
+
+# FOR OVERLAY 10 US
+# om 3 0x022BCA80 128928 0x176E00 r-x fmap.arm9o10
+
+# 0x022ddaa4: Begin of script engine loop
+# 0x022e2dcc: Loads the address where the current opcode is at into r4, using the offset to the current local script variables (?) from r9.
+# 0x022e2dd4: Loading the opcode into r8
+
+// [NA] Functions Handling OpCodes:
+022DDD64 - Handle opcodes first pass. Classifies the opcodes using a value from 0 to 6, store it in script engine struct at 0xE
+022E2480 - Hanlde some script opcodes. Unknown purpose
+022DD164 - Calls 022DDD64, and 022E2480. Also does some handling of script data on its own depending on how the last instruction is classified.
+022DD2C0 - Handles opcodes after they were handled by 022DD164 and 022DDD64. Uses value in the script engine struct at 0xE.
+// [EU] equivalents:
+???
+???
+0x022ddaa4
+???
+
+(r9 is shown as sb in radare.)
+
+
+ScriptStruct:
+0x00: 44 1F 32 02 
+0x04: 00 00 00 00 
+0x08: 01 00 00 00
+0x0c: 01 00 
+0x0E: 02 00 
+0x10: 04 00 
+0x12: 00 00 
+0x14: C0 FC 12 02 
+0x18: CA 0C 12 02 
+0x1C: D6 14 13 02 
+0x20: 2C B2 13 02 
+0x24: C0 0C 12 02 
+0x28: CA 0C 12 02 
+0x2C: F6 0C 12 02 
+0x30: FC 0C 12 02 
+0x34: D2 14 13 02 
+0x38: D4 14 13 02 
+0x3C: 01 00 
+0x40: FF FF 
+0x42: 00 00 
+0x44: FF 00 00 00 
+0x48: 00 00 00 00
+
+
+Operator fn US: 0204c0d0
+
+
+Through memory probing I found out the general sturcture of loaded script state data in RAM:
+- The structs are initialized in FuncLoadingScripts (all following addresses are pointers)
+- 0x2324CF4 - Main global ScriptEngineStruct     // EU: 0x02325834
+- 0x2324CF8 - Unknown array with 0xC bytes per entry
+- 0x2324CFC - List of actors, each 0x250 bytes in size. At 0x38 starts the ScriptEngineStruct for this actor.
+- 0x2324D00 - List of objects, each 0x218 bytes in size. At 0x?? starts ScriptEngineStruct.
+- 0x2324D04 - Same for performer, each 0x214
+- 0x2324D08 - Something for events, 0x32 per event
+
+Actors/objects/performer structs start with data similar to how it's stored in the SSA. It's updated and is the actual RAM version of it!

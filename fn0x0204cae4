@@ -1,0 +1,24 @@
+; Function called by BranchScenarioNowAfter
+0x0204cae4      push    {r3, r4, r5, r6, r7, lr}
+0x0204cae8      mov     r7, r0
+0x0204caec      mov     r6, r1
+0x0204caf0      mov     r0, 0
+0x0204caf4      mov     r5, r2
+0x0204caf8      mov     r1, r7
+0x0204cafc      mov     r2, r0
+0x0204cb00      bl      fcn.0204b9b0
+0x0204cb04      mov     r4, r0
+0x0204cb08      mov     r1, r7
+0x0204cb0c      mov     r0, 0
+0x0204cb10      mov     r2, 1
+0x0204cb14      bl      fcn.0204b9b0
+0x0204cb18      cmp     r4, r6
+0x0204cb1c      bne     0x204cb38
+0x0204cb20      cmp     r5, 0
+0x0204cb24      movlt   r0, 1
+0x0204cb28      poplt   {r3, r4, r5, r6, r7, pc}
+0x0204cb2c      cmp     r0, r5
+0x0204cb30      moveq   r0, 1
+0x0204cb34      popeq   {r3, r4, r5, r6, r7, pc}
+0x0204cb38      mov     r0, 0
+0x0204cb3c      pop     {r3, r4, r5, r6, r7, pc}

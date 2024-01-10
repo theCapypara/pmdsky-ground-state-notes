@@ -1,0 +1,65 @@
+Function of ProcessSpecial 51 [EU] [0x20569CC US]
+
+0x02056d48      push    {r3, r4, r5, r6, r7, r8, sb, sl, fp, lr}
+0x02056d4c      bl      fcn.02055a24
+0x02056d50      mov     r5, r0     ; arg1  ; HERO ID
+0x02056d54      bl      fcn.02055a68
+0x02056d58      mov     r6, r0     ; arg1  ; PARTNER ID
+0x02056d5c      bl      fcn.02055aac       
+0x02056d60      mov     r8, 0              
+0x02056d64      ldr     r1, [aav.aav.0x020b138c] ; 0x2056e28
+0x02056d68      mov     r7, r0             ; ATTENDANT2 ID [-1 if n/a]
+0x02056d6c      ldr     r1, [r1]   ; 0x20b138c
+                                   ; aav.0x020b138c
+0x02056d70      mov     sl, r8
+0x02056d74      add     r0, r1, 0x9000
+0x02056d78      ldr     sb, [r0, 0x84c]
+0x02056d7c      mov     fp, r8
+0x02056d80      mov     r4, 1
+0x02056d84      ldrb    r0, [sb]
+0x02056d88      tst     r0, 1      ; 1
+0x02056d8c      movne   r0, r4
+0x02056d90      moveq   r0, fp
+0x02056d94      tst     r0, 0xff   ; 255
+0x02056d98      ldrshne r0, [sb, 8]
+0x02056d9c      cmpne   r0, r5
+0x02056da0      cmpne   r0, r6
+0x02056da4      cmpne   r0, r7
+0x02056da8      beq     0x2056dbc
+0x02056dac      lsl     r0, sl, 0x10
+0x02056db0      asr     r0, r0, 0x10
+0x02056db4      mov     r8, 1
+0x02056db8      bl      fcn.020584b4  ; Clear team?
+0x02056dbc      add     sl, sl, 1
+0x02056dc0      cmp     sl, 4      ; 4
+0x02056dc4      add     sb, sb, 0x68
+0x02056dc8      blt     0x2056d84
+0x02056dcc      bl      fcn.02056cdc  ; Or maybe this clears the team?
+0x02056dd0      mvn     r0, 0
+0x02056dd4      cmp     r5, r0
+0x02056dd8      beq     0x2056de4
+0x02056ddc      mov     r0, r5     ; int32_t arg1
+0x02056de0      bl      fcn.02056ad0  ; Set main Pokémon from storage r0
+0x02056de4      mvn     r0, 0
+
+0x02056de8      cmp     r6, r0
+0x02056dec      beq     0x2056df8     ; Only if r6 is not -1
+0x02056df0      mov     r0, r6     ; int32_t arg1
+0x02056df4      bl      fcn.020568d0  ; Set next empty party slot from storage r0
+0x02056df8      mvn     r0, 0
+0x02056dfc      cmp     r7, r0
+0x02056e00      beq     0x2056e0c     ; Only if r7 is not -1
+0x02056e04      mov     r0, r7     ; int32_t arg1
+0x02056e08      bl      fcn.020568d0  ; Set next empty party slot from storage r0
+
+
+
+0x02056e0c      ldr     r0, [aav.aav.0x020b138c] ; 0x2056e28
+0x02056e10      ldr     r0, [r0]   ; 0x20b138c
+                                   ; aav.0x020b138c
+0x02056e14      add     r0, r0, 0x9000
+0x02056e18      ldrb    r0, [r0, 0x877] ; int32_t arg1
+0x02056e1c      bl      fcn.020577e0  ; Maybe apply party changes?
+0x02056e20      mov     r0, r8
+0x02056e24      pop     {r3, r4, r5, r6, r7, r8, sb, sl, fp, pc}
+0x02056e28      .dword 0x020b138c ; aav.0x020b138c

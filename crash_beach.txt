@@ -1,0 +1,41 @@
+Execute lives   0   0  command 2121764
+GroundLives Execute   0  kind   1  2111df8
+bgm stop  60
+BgmStop  mode 0 2  num 100  time 60
+script ground sub call   0
+bgm end 100
+SCENARIO CALC [  3]    2    1 ->    2    2
+    enter dungeon set   1
+_ScriptCaseProcess 1
+    CASE OUT message_Menu[009d]
+ScriptData_Command_MENU request 54
+script menu request  54
+SetupPartyDungeon ==========================
+      0[  0]
+
+script menu result 1
+ScriptData_Command_MENU result 1
+_ScriptCaseProcess 1
+    CASE OUT main_EnterDungeon[008d]
+    enter dungeon request   1
+GroundMain dungeon request   0   0
+_ScriptCaseProcess 1
+    CASE OUT       Hold[0082]
+GroundLives Delete id   0
+GroundLives Delete id   1
+GroundPerformer Delete id   0
+Ground Event >> Ground Quit
+GroundMain quit process start
+enter DUNGEON 0 1
+MainGame enter dungeon mode 0 1
+dungeon fade out mode 0
+bgm2 stop   0
+dic file name FONT/te_sdic.bin
+DG_VRAM_SPRITE_NAME:992
+Ground Event >> Ground Start
+Ground Event >> Ground Start
+bgm play  21 256 256
+stair
+stair
+stair
+Ground Event >> Ground Map Change

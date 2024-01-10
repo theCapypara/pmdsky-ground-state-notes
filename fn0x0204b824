@@ -1,0 +1,131 @@
+            ; XREFS(87)
+┌ 68: fcn.0204b824 (int32_t arg1, int32_t arg2);
+│           ; var int32_t var_8h @ sp+0x0
+│           ; arg int32_t arg1 @ r0
+│           ; arg int32_t arg2 @ r1
+│           0x0204b824      10402de9       push {r4, lr}
+│           0x0204b828      08d04de2       sub sp, sp, 8
+│           0x0204b82c      0020a0e1       mov r2, r0                  ; arg1
+│           0x0204b830      0140a0e1       mov r4, r1                  ; arg2
+│           0x0204b834      0210a0e1       mov r1, r2
+│           0x0204b838      00008de2       add r0, sp, 0               ; int32_t arg1
+│           0x0204b83c      0420a0e1       mov r2, r4
+│           0x0204b840      e3ffffeb       bl fcn.0204b7d4
+│           0x0204b844      00109de5       ldr r1, [sp]
+│           0x0204b848      f000d1e1       ldrsh r0, [r1]
+│           0x0204b84c      090050e3       cmp r0, 9                   ; 9
+│           0x0204b850      00f18f90       addls pc, pc, r0, lsl 2     ; [0x204b858:4]=0xea000051
+│           0x0204b854      520000ea       b 0x204b9a4
+│           ; CODE XREF from fcn.0204b824 @ 0x204b850
+│           0x0204b858      510000ea       b 0x204b9a4
+            0x0204b85c      070000ea       b 0x204b880
+            0x0204b860      0f0000ea       b 0x204b8a4
+            0x0204b864      0e0000ea       b 0x204b8a4
+            0x0204b868      100000ea       b 0x204b8b0
+            0x0204b86c      120000ea       b 0x204b8bc
+            0x0204b870      140000ea       b 0x204b8c8
+            0x0204b874      160000ea       b 0x204b8d4
+            0x0204b878      150000ea       b 0x204b8d4
+            0x0204b87c      170000ea       b 0x204b8e0
+            ; CODE XREF from fcn.0204b824 @ +0x38
+            0x0204b880      f610d1e1       ldrsh r1, [r1, 6]
+            0x0204b884      04209de5       ldr r2, [sp, 4]
+            0x0204b888      0100a0e3       mov r0, 1
+            0x0204b88c      1011a0e1       lsl r1, r0, r1
+            0x0204b890      0020d2e5       ldrb r2, [r2]
+            0x0204b894      ff1001e2       and r1, r1, 0xff
+            0x0204b898      010012e1       tst r2, r1
+            0x0204b89c      0000a003       moveq r0, 0
+            0x0204b8a0      400000ea       b 0x204b9a8                 ; fcn.0204b824+0x184
+            ; CODE XREFS from fcn.0204b824 @ +0x3c, +0x40
+            0x0204b8a4      04009de5       ldr r0, [sp, 4]
+            0x0204b8a8      0000d0e5       ldrb r0, [r0]
+            0x0204b8ac      3d0000ea       b 0x204b9a8                 ; fcn.0204b824+0x184
+            ; CODE XREF from fcn.0204b824 @ +0x44
+            0x0204b8b0      04009de5       ldr r0, [sp, 4]
+            0x0204b8b4      d000d0e1       ldrsb r0, [r0]
+            0x0204b8b8      3a0000ea       b 0x204b9a8                 ; fcn.0204b824+0x184
+            ; CODE XREF from fcn.0204b824 @ +0x48
+            0x0204b8bc      04009de5       ldr r0, [sp, 4]
+            0x0204b8c0      b000d0e1       ldrh r0, [r0]
+            0x0204b8c4      370000ea       b 0x204b9a8                 ; fcn.0204b824+0x184
+            ; CODE XREF from fcn.0204b824 @ +0x4c
+            0x0204b8c8      04009de5       ldr r0, [sp, 4]
+            0x0204b8cc      f000d0e1       ldrsh r0, [r0]
+            0x0204b8d0      340000ea       b 0x204b9a8                 ; fcn.0204b824+0x184
+            ; CODE XREFS from fcn.0204b824 @ +0x50, +0x54
+            0x0204b8d4      04009de5       ldr r0, [sp, 4]
+            0x0204b8d8      000090e5       ldr r0, [r0]
+            0x0204b8dc      310000ea       b 0x204b9a8                 ; fcn.0204b824+0x184
+            ; CODE XREF from fcn.0204b824 @ +0x58
+            0x0204b8e0      480054e3       cmp r4, 0x48                ; 72
+            0x0204b8e4      0c0000ca       bgt 0x204b91c
+            0x0204b8e8      1d0000aa       bge 0x204b964
+            0x0204b8ec      3d0054e3       cmp r4, 0x3d                ; 61
+            0x0204b8f0      060000ca       bgt 0x204b910
+            0x0204b8f4      3a0054e2       subs r0, r4, 0x3a
+            0x0204b8f8      00f18f50       addpl pc, pc, r0, lsl 2     ; [0x204b900:4]=0xea00000c
+            0x0204b8fc      280000ea       b 0x204b9a4                 ; fcn.0204b824+0x180
+            ; CODE XREF from fcn.0204b824 @ +0xd4
+            0x0204b900      0c0000ea       b 0x204b938
+            0x0204b904      0d0000ea       b 0x204b940
+            0x0204b908      0f0000ea       b 0x204b94c
+            0x0204b90c      100000ea       b 0x204b954
+            ; CODE XREF from fcn.0204b824 @ +0xcc
+            0x0204b910      470054e3       cmp r4, 0x47                ; 71
+            0x0204b914      1000000a       beq 0x204b95c
+            0x0204b918      210000ea       b 0x204b9a4                 ; fcn.0204b824+0x180
+            ; CODE XREF from fcn.0204b824 @ +0xc0
+            0x0204b91c      490054e3       cmp r4, 0x49                ; 73
+            0x0204b920      010000ca       bgt 0x204b92c
+            0x0204b924      1000000a       beq 0x204b96c
+            0x0204b928      1d0000ea       b 0x204b9a4                 ; fcn.0204b824+0x180
+            ; CODE XREF from fcn.0204b824 @ +0xfc
+            0x0204b92c      700054e3       cmp r4, 0x70                ; 112
+            0x0204b930      1900000a       beq 0x204b99c
+            0x0204b934      1a0000ea       b 0x204b9a4                 ; fcn.0204b824+0x180
+            ; CODE XREF from fcn.0204b824 @ +0xdc
+            0x0204b938      0100a0e3       mov r0, 1
+            0x0204b93c      190000ea       b 0x204b9a8                 ; fcn.0204b824+0x184
+            ; CODE XREF from fcn.0204b824 @ +0xe0
+            0x0204b940      0000a0e3       mov r0, 0
+            0x0204b944      942d00eb       bl fcn.02056f9c
+            0x0204b948      160000ea       b 0x204b9a8                 ; fcn.0204b824+0x184
+            ; CODE XREF from fcn.0204b824 @ +0xe4
+            0x0204b94c      140dffeb       bl fcn.0200eda4
+            0x0204b950      140000ea       b 0x204b9a8                 ; fcn.0204b824+0x184
+            ; CODE XREF from fcn.0204b824 @ +0xe8
+            0x0204b954      9613ffeb       bl fcn.020107b4
+            0x0204b958      120000ea       b 0x204b9a8                 ; fcn.0204b824+0x184
+            ; CODE XREF from fcn.0204b824 @ +0xf0
+            0x0204b95c      4953ffeb       bl fcn.02020688
+            0x0204b960      100000ea       b 0x204b9a8                 ; fcn.0204b824+0x184
+            ; CODE XREF from fcn.0204b824 @ +0xc4
+            0x0204b964      63feffeb       bl fcn.0204b2f8
+            0x0204b968      0e0000ea       b 0x204b9a8                 ; fcn.0204b824+0x184
+            ; CODE XREF from fcn.0204b824 @ +0x100
+            0x0204b96c      61feffeb       bl fcn.0204b2f8
+            0x0204b970      010050e3       cmp r0, 1                   ; 1
+            0x0204b974      0200000a       beq 0x204b984
+            0x0204b978      030050e3       cmp r0, 3                   ; 3
+            0x0204b97c      0200000a       beq 0x204b98c
+            0x0204b980      030000ea       b 0x204b994
+            ; CODE XREF from fcn.0204b824 @ +0x150
+            0x0204b984      b10400eb       bl fcn.0204cc50
+            0x0204b988      060000ea       b 0x204b9a8                 ; fcn.0204b824+0x184
+            ; CODE XREF from fcn.0204b824 @ +0x158
+            0x0204b98c      a40400eb       bl fcn.0204cc24
+            0x0204b990      040000ea       b 0x204b9a8                 ; fcn.0204b824+0x184
+            ; CODE XREF from fcn.0204b824 @ +0x15c
+            0x0204b994      0000e0e3       mvn r0, 0
+            0x0204b998      020000ea       b 0x204b9a8                 ; fcn.0204b824+0x184
+            ; CODE XREF from fcn.0204b824 @ +0x10c
+            0x0204b99c      86f3ffeb       bl fcn.020487bc
+            0x0204b9a0      000000ea       b 0x204b9a8                 ; fcn.0204b824+0x184
+│           ; XREFS: CODE 0x0204b854  CODE 0x0204b858  CODE 0x0204b8fc  CODE 0x0204b918  CODE 0x0204b928  CODE 0x0204b934  
+│           0x0204b9a4      0000a0e3       mov r0, 0
+│           ; XREFS: CODE 0x0204b8a0  CODE 0x0204b8ac  CODE 0x0204b8b8  CODE 0x0204b8c4  CODE 0x0204b8d0  CODE 0x0204b8dc  
+│           ; XREFS: CODE 0x0204b93c  CODE 0x0204b948  CODE 0x0204b950  CODE 0x0204b958  CODE 0x0204b960  CODE 0x0204b968  
+│           ; XREFS: CODE 0x0204b988  CODE 0x0204b990  CODE 0x0204b998  CODE 0x0204b9a0  
+│           0x0204b9a8      08d08de2       add sp, sp, 8
+└           0x0204b9ac      1080bde8       pop {r4, pc}

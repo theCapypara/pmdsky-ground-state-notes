@@ -1,0 +1,197 @@
+<GameVar type="8" unk1="2" memoffset="  0x0" bitshift="0x0" unk3="  0x1" unk4="0x1" name="VERSION" />
+- 1
+<GameVar type="8" unk1="2" memoffset="  0x4" bitshift="0x0" unk3="  0x1" unk4="0x0" name="CONDITION" />
+- 1
+<GameVar type="7" unk1="2" memoffset="  0x8" bitshift="0x0" unk3="  0x3" unk4="0x0" name="POSITION_X" />
+- 3
+<GameVar type="7" unk1="2" memoffset=" 0x14" bitshift="0x0" unk3="  0x3" unk4="0x0" name="POSITION_Y" />
+- 3
+<GameVar type="7" unk1="2" memoffset=" 0x20" bitshift="0x0" unk3="  0x3" unk4="0x0" name="POSITION_HEIGHT" />
+- 3
+<GameVar type="7" unk1="2" memoffset=" 0x2C" bitshift="0x0" unk3="  0x1" unk4="0x0" name="RECYCLE_COUNT" />
+- 1
+<GameVar type="6" unk1="2" memoffset=" 0x30" bitshift="0x0" unk3="  0x1" unk4="0x0" name="GROUND_ENTER" />
+- 1
+<GameVar type="6" unk1="2" memoffset=" 0x32" bitshift="0x0" unk3="  0x1" unk4="0x0" name="GROUND_GETOUT" />
+- 1
+<GameVar type="6" unk1="2" memoffset=" 0x34" bitshift="0x0" unk3="  0x1" unk4="0x0" name="GROUND_MAP" />
+- 1
+<GameVar type="6" unk1="2" memoffset=" 0x36" bitshift="0x0" unk3="  0x1" unk4="0x0" name="GROUND_PLACE" />
+- 1
+<GameVar type="6" unk1="2" memoffset=" 0x38" bitshift="0x0" unk3="  0x5" unk4="0x0" name="GROUND_ENTER_BACKUP" />
+- 5
+<GameVar type="6" unk1="2" memoffset=" 0x42" bitshift="0x0" unk3="  0x5" unk4="0x0" name="GROUND_GETOUT_BACKUP" />
+- 5
+<GameVar type="6" unk1="2" memoffset=" 0x4C" bitshift="0x0" unk3="  0x5" unk4="0x0" name="GROUND_MAP_BACKUP" />
+- 5
+<GameVar type="6" unk1="2" memoffset=" 0x56" bitshift="0x0" unk3="  0x5" unk4="0x0" name="GROUND_PLACE_BACKUP" />
+- 5
+<GameVar type="6" unk1="2" memoffset=" 0x60" bitshift="0x0" unk3="  0x1" unk4="0x0" name="DUNGEON_SELECT" />
+- 1
+<GameVar type="6" unk1="2" memoffset=" 0x62" bitshift="0x0" unk3="  0x1" unk4="0x0" name="DUNGEON_ENTER" />
+- 1
+<GameVar type="6" unk1="2" memoffset=" 0x64" bitshift="0x0" unk3="  0x1" unk4="0x0" name="DUNGEON_ENTER_MODE" />
+- 1
+<GameVar type="6" unk1="2" memoffset=" 0x66" bitshift="0x0" unk3="  0x1" unk4="0x0" name="DUNGEON_ENTER_INDEX" />
+- 1
+<GameVar type="6" unk1="2" memoffset=" 0x68" bitshift="0x0" unk3="  0x5" unk4="0x0" name="DUNGEON_ENTER_BACKUP" />
+- 5
+<GameVar type="6" unk1="2" memoffset=" 0x72" bitshift="0x0" unk3="  0x5" unk4="0x0" name="DUNGEON_ENTER_MODE_BACKUP" />
+- 5
+<GameVar type="6" unk1="2" memoffset=" 0x7C" bitshift="0x0" unk3="  0x5" unk4="0x0" name="DUNGEON_ENTER_INDEX_BACKUP" />
+- 5
+<GameVar type="6" unk1="2" memoffset=" 0x86" bitshift="0x0" unk3="  0x1" unk4="0x0" name="HERO_FIRST_KIND" />
+- 1
+<GameVar type="6" unk1="2" memoffset=" 0x88" bitshift="0x0" unk3="  0x1" unk4="0x0" name="PARTNER_FIRST_KIND" />
+- 1
+<GameVar type="6" unk1="2" memoffset=" 0x8A" bitshift="0x0" unk3="  0x1" unk4="0x0" name="RANDOM_REQUEST_NPC03_KIND" />
+- 1
+<GameVar type="6" unk1="5" memoffset=" 0x8C" bitshift="0x0" unk3="  0x1" unk4="0x0" name="EVENT_LOCAL" />
+- 1
+<GameVar type="6" unk1="4" memoffset=" 0x8E" bitshift="0x0" unk3="  0x1" unk4="0x0" name="DUNGEON_EVENT_LOCAL" />
+- 1
+<GameVar type="6" unk1="2" memoffset=" 0x90" bitshift="0x0" unk3="  0x2" unk4="0x0" name="ITEM_BACKUP" />
+- 2
+<GameVar type="6" unk1="2" memoffset=" 0x94" bitshift="0x0" unk3="  0x2" unk4="0x0" name="ITEM_BACKUP_KUREKURE" />
+- 2
+<GameVar type="6" unk1="2" memoffset=" 0x98" bitshift="0x0" unk3="  0x2" unk4="0x0" name="ITEM_BACKUP_TAKE" />
+- 2
+<GameVar type="6" unk1="2" memoffset=" 0x9C" bitshift="0x0" unk3="  0x2" unk4="0x0" name="ITEM_BACKUP_GET" />
+- 2
+<GameVar type="6" unk1="2" memoffset=" 0xA0" bitshift="0x0" unk3="  0x1" unk4="0x0" name="REQUEST_THANKS_RESULT_KIND" />
+- 1
+<GameVar type="6" unk1="2" memoffset=" 0xA2" bitshift="0x0" unk3="  0x1" unk4="0x0" name="REQUEST_THANKS_RESULT_VARIATION" />
+- 1
+<GameVar type="5" unk1="2" memoffset=" 0xA4" bitshift="0x0" unk3="  0x1" unk4="0x0" name="DUNGEON_ENTER_FREQUENCY" />
+- 1
+<GameVar type="5" unk1="2" memoffset=" 0xA6" bitshift="0x0" unk3="  0x5" unk4="0x0" name="DUNGEON_ENTER_FREQUENCY_BACKUP" />
+- 5
+<GameVar type="4" unk1="6" memoffset=" 0xB0" bitshift="0x0" unk3="  0x1" unk4="0x0" name="SCENARIO_BALANCE_FLAG" />
+- 1
+<GameVar type="4" unk1="6" memoffset=" 0xB1" bitshift="0x0" unk3="  0x1" unk4="0x0" name="SCENARIO_BALANCE_DEBUG" />
+- 1
+<GameVar type="4" unk1="2" memoffset=" 0xB2" bitshift="0x0" unk3="  0x1" unk4="0x0" name="HERO_TALK_KIND" />
+- 1
+<GameVar type="4" unk1="2" memoffset=" 0xB3" bitshift="0x0" unk3="  0x1" unk4="0x0" name="PARTNER_TALK_KIND" />
+- 1
+<GameVar type="4" unk1="2" memoffset=" 0xB4" bitshift="0x0" unk3="  0x1" unk4="0x0" name="CONFIG_COLOR_KIND" />
+- 1
+<GameVar type="4" unk1="2" memoffset=" 0xB5" bitshift="0x0" unk3="  0x1" unk4="0x0" name="ROM_VARIATION" />
+- 1
+<GameVar type="4" unk1="2" memoffset=" 0xB6" bitshift="0x0" unk3="  0x1" unk4="0x0" name="SPECIAL_EPISODE_TYPE" />
+- 1
+<GameVar type="4" unk1="2" memoffset=" 0xB7" bitshift="0x0" unk3="  0x3" unk4="0x0" name="POSITION_DIRECTION" />
+- 3
+<GameVar type="3" unk1="6" memoffset=" 0xBA" bitshift="0x0" unk3="  0x2" unk4="0x0" name="SCENARIO_SELECT" />
+- 2
+<GameVar type="3" unk1="6" memoffset=" 0xBC" bitshift="0x0" unk3="  0x2" unk4="0x0" name="SCENARIO_MAIN" />
+- 2
+<GameVar type="3" unk1="6" memoffset=" 0xBE" bitshift="0x0" unk3="  0x2" unk4="0x0" name="SCENARIO_SIDE" />
+- 2
+<GameVar type="3" unk1="6" memoffset=" 0xC0" bitshift="0x0" unk3="  0x2" unk4="0x0" name="SCENARIO_SUB1" />
+- 2
+<GameVar type="3" unk1="6" memoffset=" 0xC2" bitshift="0x0" unk3="  0x2" unk4="0x0" name="SCENARIO_SUB2" />
+- 2
+<GameVar type="3" unk1="6" memoffset=" 0xC4" bitshift="0x0" unk3="  0x2" unk4="0x0" name="SCENARIO_SUB3" />
+- 2
+<GameVar type="3" unk1="6" memoffset=" 0xC6" bitshift="0x0" unk3="  0x2" unk4="0x0" name="SCENARIO_SUB4" />
+- 2
+<GameVar type="3" unk1="6" memoffset=" 0xC8" bitshift="0x0" unk3="  0x2" unk4="0x0" name="SCENARIO_SUB5" />
+- 2
+<GameVar type="3" unk1="6" memoffset=" 0xCA" bitshift="0x0" unk3="  0x2" unk4="0x0" name="SCENARIO_SUB6" />
+- 2
+<GameVar type="3" unk1="6" memoffset=" 0xCC" bitshift="0x0" unk3="  0x2" unk4="0x0" name="SCENARIO_SUB7" />
+- 2
+<GameVar type="3" unk1="6" memoffset=" 0xCE" bitshift="0x0" unk3="  0x2" unk4="0x0" name="SCENARIO_SUB8" />
+- 2
+<GameVar type="3" unk1="6" memoffset=" 0xD0" bitshift="0x0" unk3="  0x1" unk4="0x0" name="CRYSTAL_COLOR_01" />
+- 1
+<GameVar type="3" unk1="6" memoffset=" 0xD1" bitshift="0x0" unk3="  0x1" unk4="0x0" name="CRYSTAL_COLOR_02" />
+- 1
+<GameVar type="3" unk1="6" memoffset=" 0xD2" bitshift="0x0" unk3="  0x1" unk4="0x0" name="CRYSTAL_COLOR_03" />
+- 1
+<GameVar type="3" unk1="6" memoffset=" 0xD3" bitshift="0x0" unk3="  0x1" unk4="0x0" name="COMPULSORY_SAVE_POINT" />
+- 1
+<GameVar type="3" unk1="6" memoffset=" 0xD4" bitshift="0x0" unk3="  0x1" unk4="0x0" name="COMPULSORY_SAVE_POINT_SIDE" />
+- 1
+<GameVar type="3" unk1="6" memoffset=" 0xD5" bitshift="0x0" unk3="  0x8" unk4="0x0" name="SCENARIO_SELECT_BACKUP" />
+- 8
+<GameVar type="3" unk1="2" memoffset=" 0xDD" bitshift="0x0" unk3="  0x1" unk4="0x0" name="GROUND_ENTER_LINK" />
+- 1
+<GameVar type="3" unk1="2" memoffset=" 0xDE" bitshift="0x0" unk3="  0x5" unk4="0x0" name="GROUND_ENTER_LINK_BACKUP" />
+- 5
+<GameVar type="3" unk1="2" memoffset=" 0xE3" bitshift="0x0" unk3="  0x1" unk4="0x0" name="DUNGEON_RESULT" />
+- 1
+<GameVar type="3" unk1="2" memoffset=" 0xE4" bitshift="0x0" unk3="  0x1" unk4="0x0" name="GROUND_START_MODE" />
+- 1
+<GameVar type="3" unk1="2" memoffset=" 0xE5" bitshift="0x0" unk3="  0x5" unk4="0x0" name="DUNGEON_RESULT_BACKUP" />
+- 5
+<GameVar type="3" unk1="2" memoffset=" 0xEA" bitshift="0x0" unk3="  0x5" unk4="0x0" name="GROUND_START_MODE_BACKUP" />
+- 5
+<GameVar type="3" unk1="2" memoffset=" 0xEF" bitshift="0x0" unk3="  0x1" unk4="0x0" name="REQUEST_CLEAR_COUNT" />
+- 1
+<GameVar type="3" unk1="2" memoffset=" 0xF0" bitshift="0x0" unk3="  0x1" unk4="0x0" name="PLAYER_KIND" />
+- 1
+<GameVar type="3" unk1="2" memoffset=" 0xF1" bitshift="0x0" unk3="  0x1" unk4="0x0" name="ATTENDANT1_KIND" />
+- 1
+<GameVar type="3" unk1="2" memoffset=" 0xF2" bitshift="0x0" unk3="  0x1" unk4="0x0" name="ATTENDANT2_KIND" />
+- 1
+<GameVar type="3" unk1="2" memoffset=" 0xF3" bitshift="0x0" unk3="  0x5" unk4="0x0" name="PLAYER_KIND_BACKUP" />
+- 5
+<GameVar type="3" unk1="2" memoffset=" 0xF8" bitshift="0x0" unk3="  0x5" unk4="0x0" name="ATTENDANT1_KIND_BACKUP" />
+- 5
+<GameVar type="3" unk1="2" memoffset=" 0xFD" bitshift="0x0" unk3="  0x5" unk4="0x0" name="ATTENDANT2_KIND_BACKUP" />
+- 5
+<GameVar type="3" unk1="5" memoffset="0x102" bitshift="0x0" unk3="  0x1" unk4="0x0" name="WORLD_MAP_LEVEL" />
+- 1
+<GameVar type="3" unk1="6" memoffset="0x103" bitshift="0x0" unk3="  0x1" unk4="0x0" name="LOTTERY_RESULT" />
+- 1
+<GameVar type="3" unk1="2" memoffset="0x104" bitshift="0x0" unk3="  0x1" unk4="0x0" name="SUB30_SPOT_LEVEL" />
+- 1
+<GameVar type="3" unk1="2" memoffset="0x105" bitshift="0x0" unk3="  0x1" unk4="0x0" name="TEAM_RANK_EVENT_LEVEL" />
+- 1
+<GameVar type="3" unk1="2" memoffset="0x106" bitshift="0x0" unk3="  0x1" unk4="0x0" name="PLAY_OLD_GAME" />
+- 1
+<GameVar type="2" unk1="2" memoffset="0x107" bitshift="0x0" unk3="  0xA" unk4="0x0" name="HERO_FIRST_NAME" />
+- 10 (str?)
+<GameVar type="2" unk1="2" memoffset="0x111" bitshift="0x0" unk3="  0xA" unk4="0x0" name="PARTNER_FIRST_NAME" />
+- 10 (str?)
+<GameVar type="1" unk1="6" memoffset="0x11B" bitshift="0x0" unk3="  0x3" unk4="0x0" name="SIDE02_TALK" />
+- 3 bit
+<GameVar type="1" unk1="6" memoffset="0x11B" bitshift="0x3" unk3="  0x3" unk4="0x0" name="SIDE06_ROOM" />
+- 3 bit
+<GameVar type="1" unk1="6" memoffset="0x11B" bitshift="0x6" unk3="  0x1" unk4="0x0" name="SIDE08_BOSS2ND" />
+- 1 bit
+<GameVar type="1" unk1="6" memoffset="0x11B" bitshift="0x7" unk3="  0x1" unk4="0x0" name="SIDE01_BOSS2ND" />
+- 1 bit
+<GameVar type="1" unk1="6" memoffset="0x11C" bitshift="0x0" unk3=" 0x80" unk4="0x0" name="SCENARIO_MAIN_BIT_FLAG" />
+- 16 * 8 bit (128 entries)
+<GameVar type="1" unk1="6" memoffset="0x12C" bitshift="0x0" unk3="0x100" unk4="0x0" name="SCENARIO_TALK_BIT_FLAG" />
+- 32 * 8 bit (256 entries)
+<GameVar type="1" unk1="6" memoffset="0x14C" bitshift="0x0" unk3="0x200" unk4="0x0" name="SCENARIO_MAIN_BIT_FLAG_BACKUP" />
+- 64 * 8 bit (512 entries)
+<GameVar type="1" unk1="2" memoffset="0x18C" bitshift="0x0" unk3="  0x8" unk4="0x0" name="SPECIAL_EPISODE_OPEN" />
+- 8 bit
+<GameVar type="1" unk1="2" memoffset="0x18D" bitshift="0x0" unk3="  0x8" unk4="0x0" name="SPECIAL_EPISODE_OPEN_OLD" />
+- 8 bit
+<GameVar type="1" unk1="2" memoffset="0x18E" bitshift="0x0" unk3="  0x8" unk4="0x0" name="SPECIAL_EPISODE_CONQUEST" />
+- 8 bit
+<GameVar type="1" unk1="2" memoffset="0x18F" bitshift="0x0" unk3=" 0x40" unk4="0x0" name="PERFORMANCE_PROGRESS_LIST" />
+- 8 * 8 bit (64 entries)
+<GameVar type="1" unk1="4" memoffset="0x197" bitshift="0x0" unk3="0x100" unk4="0x0" name="DUNGEON_OPEN_LIST" />
+<GameVar type="1" unk1="4" memoffset="0x1B7" bitshift="0x0" unk3="0x100" unk4="0x0" name="DUNGEON_ENTER_LIST" />
+<GameVar type="1" unk1="4" memoffset="0x1D7" bitshift="0x0" unk3="0x100" unk4="0x0" name="DUNGEON_ARRIVE_LIST" />
+<GameVar type="1" unk1="4" memoffset="0x1F7" bitshift="0x0" unk3="0x100" unk4="0x0" name="DUNGEON_CONQUEST_LIST" />
+<GameVar type="1" unk1="4" memoffset="0x217" bitshift="0x0" unk3="0x100" unk4="0x0" name="DUNGEON_PRESENT_LIST" />
+<GameVar type="1" unk1="4" memoffset="0x237" bitshift="0x0" unk3="0x100" unk4="0x0" name="DUNGEON_REQUEST_LIST" />
+<GameVar type="1" unk1="5" memoffset="0x257" bitshift="0x0" unk3="0x140" unk4="0x0" name="WORLD_MAP_MARK_LIST_NORMAL" />
+<GameVar type="1" unk1="5" memoffset="0x27F" bitshift="0x0" unk3="0x140" unk4="0x0" name="WORLD_MAP_MARK_LIST_SPECIAL" />
+<GameVar type="1" unk1="5" memoffset="0x2A7" bitshift="0x0" unk3=" 0x20" unk4="0x0" name="STATION_ITEM_STATIC" />
+<GameVar type="1" unk1="5" memoffset="0x2AB" bitshift="0x0" unk3=" 0x20" unk4="0x0" name="STATION_ITEM_TEMP" />
+<GameVar type="1" unk1="5" memoffset="0x2AF" bitshift="0x0" unk3=" 0x10" unk4="0x0" name="DELIVER_ITEM_STATIC" />
+<GameVar type="1" unk1="5" memoffset="0x2B1" bitshift="0x0" unk3=" 0x10" unk4="0x0" name="DELIVER_ITEM_TEMP" />
+<GameVar type="1" unk1="6" memoffset="0x2B3" bitshift="0x0" unk3="  0x5" unk4="0x0" name="BIT_FUWARANTE_LOCAL" />
+<GameVar type="1" unk1="6" memoffset="0x2B3" bitshift="0x5" unk3="  0x1" unk4="0x0" name="SUB30_TREASURE_DISCOVER" />
+<GameVar type="1" unk1="6" memoffset="0x2B3" bitshift="0x6" unk3="  0x1" unk4="0x0" name="SUB30_SPOT_DISCOVER" />
+<GameVar type="1" unk1="6" memoffset="0x2B3" bitshift="0x7" unk3="  0x1" unk4="0x0" name="SUB30_PROJECTP" />
+<GameVar type="0" unk1="0" memoffset="0x2B4" bitshift="0x0" unk3="  0x0" unk4="0x0" name="SUM"  />
